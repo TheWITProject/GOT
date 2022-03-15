@@ -1,3 +1,3 @@
-# Django_Queens_SampleExample
+# GOT Repository
 
 # Team Members: 
