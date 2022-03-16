@@ -1,3 +1,3 @@
 # GOT Repository
 
-# Team Members: 
+# Team Members: Feizza, Lily, Kim 
