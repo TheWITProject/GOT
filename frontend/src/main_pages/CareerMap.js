@@ -3,16 +3,17 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
-
+import { Link } from "react-router-dom";
 
 
 function CareerMap() {
     return (
         <div className="CareerMap">
+       
             <p>Welcome to Career Map!</p>
             <Grid container spacing={8}>
                 <Grid item xs={4}>
-                    <Box
+                    <Link to="/careerinfo"><Box
                         sx={{
                             width: 250,
                             height: 250,
@@ -23,7 +24,7 @@ function CareerMap() {
                                 opacity: [0.9, 0.8, 0.7],
                             },
                         }}
-                    />
+                    /></Link>
                 </Grid>
                 <Grid item xs={4}>
                     <Box

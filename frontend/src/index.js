@@ -1,13 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-//import App from './App';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
-import CareerMap from './main_pages/CareerMap';
+import CareerMap from './main_pages/CareerMap.js';
+
+import CareerInformation from "./main_pages/CareerInformation.js";
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <CareerMap />
+    <BrowserRouter>
+        <Routes>
+          {/* This route is for home component 
+          with exact path "/", in component props 
+          we passes the imported component*/}
+           <Route index element={<CareerMap />} />
+            
+          {/* This route is for about component 
+          with exact path "/about", in component 
+          props we passes the imported component*/}
+          <Route path='/careerinfo' element={<CareerInformation/>} />
+
+          </Routes>
+          </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
