@@ -16,14 +16,10 @@ ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
         <Routes>
-          {/* This route is for home component 
-          with exact path "/", in component props 
-          we passes the imported component*/}
+
            <Route index element={<CareerMap />} />
             
-          {/* This route is for about component 
-          with exact path "/about", in component 
-          props we passes the imported component*/}
+    
           <Route path='/careerinfo' element={<CareerInformation/>} />
 
           </Routes>
