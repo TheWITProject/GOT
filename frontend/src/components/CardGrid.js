@@ -10,11 +10,14 @@ function CardGrid(props) {
     width: 250,
     height: 250,
     marginLeft: 10,
-    backgroundColor: 'red',
+    backgroundColor: 'white',
     '&:hover': {
-        backgroundColor: 'primary.main',
+        backgroundColor: '#E9EBED',
         opacity: [0.9, 0.8, 0.7],
     },
+    border: 4,
+    borderRadius: 3,
+    borderColor: '#E9EBED',
   }
   let tempsx = props.cardType === "careerMap" ? careerCardTypeSX : undefined //? is if else
   return (
@@ -24,34 +27,34 @@ function CardGrid(props) {
         </Grid>
 
         <Grid item xs={4}>
-            <Card/>
+        <Card sx={tempsx}/>
         </Grid>
 
         <Grid item xs={4}>
-            <Card/>
+            <Card sx={tempsx}/>
         </Grid>
 
         <Grid item xs={4}>
-            <Card/>
+            <Card sx={tempsx}/>
         </Grid>
 
         <Grid item xs={4}>
-            <Card/>
+            <Card sx={tempsx}/>
         </Grid>
 
         <Grid item xs={4}>
-            <Card/>
+            <Card sx={tempsx}/>
         </Grid>
 
         <Grid item xs={4}>
-            <Card/>
+            <Card sx={tempsx}/>
         </Grid>
         
         <Grid item xs={4}>
-            <Card/>
+             <Card sx={tempsx}/>
         </Grid>
         <Grid item xs={4}>
-            <Card/>
+             <Card sx={tempsx}/>
         </Grid>
     </Grid>
   );
