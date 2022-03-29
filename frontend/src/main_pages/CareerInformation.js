@@ -11,11 +11,11 @@ import InfoBox from '../components/InfoBox.js';
 function CareerInformation() {
   return (
     <div className="CareerInformation">
-      <h1>Welcome to Software Engineering!!
-        <Grid item xs={2}>
+      <p>Welcome to Software Engineering!!</p>
+      
           <InfoBox sx={temp_box_sx}/>
-        </Grid>  
-      </h1>
+       
+        
      
     </div>
      

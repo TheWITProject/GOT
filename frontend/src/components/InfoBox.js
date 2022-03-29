@@ -19,7 +19,7 @@ function InfoBox(props) {
   let temp_box_sx = props.sx ? props.sx : defaultBoxSX 
   return (
     <div>
-      <Link to="/careeroverview"><Box
+      <Link to="/careerinfo"><Box
         sx={temp_box_sx}  
         
         /></Link>      
