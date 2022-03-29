@@ -20,8 +20,9 @@ function InfoBox(props) {
   return (
     <div>
       <Link to="/careeroverview"><Box
-        sx={temp_box_sx}        
-        /></Link>
+        sx={temp_box_sx}  
+        
+        /></Link>      
     </div>
   );
 }
