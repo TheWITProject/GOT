@@ -16,11 +16,11 @@ function InfoBox(props) {
         opacity: [0.9, 0.8, 0.7],
     },
   }
-  let tempBoxsx = props.sx ? props.sx : defaultBoxSX 
+  let temp_box_sx = props.sx ? props.sx : defaultBoxSX 
   return (
     <div>
       <Link to="/careeroverview"><Box
-        sx={tempBoxsx}        
+        sx={temp_box_sx}        
         /></Link>
     </div>
   );

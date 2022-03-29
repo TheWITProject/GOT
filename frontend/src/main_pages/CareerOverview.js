@@ -1,5 +1,5 @@
 import './CareerOverview.css';
-//import { styled } from '@mui/material/styles';
+import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
@@ -11,8 +11,8 @@ function CareerOverview() {
     return (
         <div>
             <p>Welcome to Career Overview!</p>
-            <Grid item xs={4}>
-                <InfoBox sx={tempBoxsx}/>
+            <Grid item xs={2}>
+                <InfoBox sx={temp_box_sx}/>
             </Grid>
         </div>
           );
