@@ -19,34 +19,41 @@ function CardGrid(props) {
   let tempsx = props.cardType === "careerMap" ? careerCardTypeSX : undefined //? is if else
   return (
     <Grid container spacing={8}>
-    <Grid item xs={4}>
-      <Card sx={tempsx}/>
+        <Grid item xs={4}>
+            <Card sx={tempsx}/>
+        </Grid>
+
+        <Grid item xs={4}>
+            <Card/>
+        </Grid>
+
+        <Grid item xs={4}>
+            <Card/>
+        </Grid>
+
+        <Grid item xs={4}>
+            <Card/>
+        </Grid>
+
+        <Grid item xs={4}>
+            <Card/>
+        </Grid>
+
+        <Grid item xs={4}>
+            <Card/>
+        </Grid>
+
+        <Grid item xs={4}>
+            <Card/>
+        </Grid>
+        
+        <Grid item xs={4}>
+            <Card/>
+        </Grid>
+        <Grid item xs={4}>
+            <Card/>
+        </Grid>
     </Grid>
-    <Grid item xs={4}>
-        <Card/>
-    </Grid>
-    <Grid item xs={4}>
-        <Card/>
-    </Grid>
-    <Grid item xs={4}>
-        <Card/>
-    </Grid>
-    <Grid item xs={4}>
-        <Card/>
-    </Grid>
-    <Grid item xs={4}>
-        <Card/>
-    </Grid>
-    <Grid item xs={4}>
-    <Card/>
-    </Grid>
-    <Grid item xs={4}>
-        <Card/>
-    </Grid>
-    <Grid item xs={4}>
-        <Card/>
-    </Grid>
-</Grid>
   );
 }
 
