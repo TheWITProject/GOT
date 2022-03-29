@@ -17,10 +17,12 @@ ReactDOM.render(
     <BrowserRouter>
         <Routes>
 
-           <Route index element={<CareerMap />} />
+          <Route index element={<CareerMap />} />
             
     
           <Route path='/careerinfo' element={<CareerInformation/>} />
+
+          <Route path='/careerinfo' element={<CareerOverview/>} />
 
           </Routes>
           </BrowserRouter>
