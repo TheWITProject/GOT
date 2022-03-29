@@ -4,9 +4,9 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import { Link } from "react-router-dom";
-import CardGrid from '../components/CardGrid.js'
+import CardGrid from './CardGrid.js'
 
-function Box(props) {
+function InfoBox(props) {
   const defaultBoxSX ={
     width: 300,
     height: 300,
@@ -20,11 +20,11 @@ function Box(props) {
   let tempsx = props.sx ? props.sx : defaultBoxSX 
   return (
     <div>
-      <Link to="/careerinfo"><Box
+      <Link to="/careerinfo/careeroverview"><Box
         sx={tempsx}          
                     /></Link>
     </div>
   );
 }
 
-export default Box;
+export default InfoBox;
