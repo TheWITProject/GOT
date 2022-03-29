@@ -15,7 +15,9 @@ function CareerOverview() {
     return (
         <div>
             <p>Welcome to Career Overview!</p>
-            <InfoBox sx = {tempsx}/>
+            <Grid item xs={4}>
+                <InfoBox sx={tempsx}/>
+            </Grid>
         </div>
           );
 }
