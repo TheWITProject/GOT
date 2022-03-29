@@ -1,10 +1,9 @@
-import './CareerMap.css';
-import { styled } from '@mui/material/styles';
+//import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import { Link } from "react-router-dom";
-import CardGrid from './CardGrid.js'
+import CardGrid from './CardGrid.js';
 
 function InfoBox(props) {
   const defaultBoxSX ={
@@ -17,12 +16,12 @@ function InfoBox(props) {
         opacity: [0.9, 0.8, 0.7],
     },
   }
-  let tempsx = props.sx ? props.sx : defaultBoxSX 
+  let tempBoxsx = props.sx ? props.sx : defaultBoxSX 
   return (
     <div>
-      <Link to="/careerinfo/careeroverview"><Box
-        sx={tempsx}          
-                    /></Link>
+      <Link to="/careeroverview"><Box
+        sx={tempBoxsx}        
+        /></Link>
     </div>
   );
 }

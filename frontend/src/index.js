@@ -23,7 +23,7 @@ ReactDOM.render(
     
           <Route path='/careerinfo' element={<CareerInformation/>} />
 
-          <Route path='/careerinfo/careeroverview' element={<CareerOverview/>} />
+          <Route path='/careeroverview' element={<CareerOverview/>} />
 
           </Routes>
           </BrowserRouter>
