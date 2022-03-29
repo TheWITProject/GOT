@@ -8,10 +8,26 @@ import CardGrid from '../components/CardGrid.js';
 import InfoBox from '../components/InfoBox.js';
 
 function CareerOverview() {
+    
     return (
         <div>
             <p>Welcome to Career Overview!</p>
-            <p><InfoBox sx = {temp_box_sx}/></p>
+            
+            <Grid container spacing={2}>
+            <Grid item xs={8}>
+  
+                <InfoBox/>
+                </Grid>
+                <InfoBox sx={{
+                        width: 400,
+                        height: 500,
+                        backgroundColor: 'primary.dark',
+                        '&:hover': {
+                        backgroundColor: 'primary.main',
+                        opacity: [0.9, 0.8, 0.7],
+                        },
+                    }}/>    
+            </Grid>
         </div>
           );
 }

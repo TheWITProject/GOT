@@ -7,18 +7,15 @@ import Grid from '@mui/material/Grid';
 import { Link } from "react-router-dom";
 import CardGrid from '../components/CardGrid.js';
 import InfoBox from '../components/InfoBox.js';
+import CareerOverview from './CareerOverview';
 
 function CareerInformation() {
   return (
     <div className="CareerInformation">
-      <p>Welcome to Software Engineering!!</p>
+      <h1>Welcome to Software Engineering!!</h1>
       
-          <InfoBox sx={temp_box_sx}/>
-       
-        
-     
+      <CareerOverview/>
     </div>
-     
 
   );
 }
