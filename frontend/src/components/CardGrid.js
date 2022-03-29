@@ -1,9 +1,7 @@
-import { styled } from '@mui/material/styles';
-import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
-import { Link } from "react-router-dom";
 import Card from '../components/Card.js'
+import "@fontsource/poppins";
+import "./CardGrid.css"
 
 function CardGrid(props) {
   const careerCardTypeSX ={
@@ -24,14 +22,17 @@ function CardGrid(props) {
     <Grid container spacing={8}>
         <Grid item xs={4}>
             <Card sx={tempsx}/>
-        </Grid>
-
-        <Grid item xs={4}>
-        <Card sx={tempsx}/>
+            <h3 class="boxLabel">Software Engineer</h3>
         </Grid>
 
         <Grid item xs={4}>
             <Card sx={tempsx}/>
+            <h3 class="boxLabel">Data Scientist</h3>
+        </Grid>
+
+        <Grid item xs={4}>
+            <Card sx={tempsx}/>
+            <h3 class="boxLabel">UI/UX Designer</h3>
         </Grid>
 
         <Grid item xs={4}>
