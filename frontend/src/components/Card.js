@@ -1,9 +1,6 @@
-import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
-import Grid from '@mui/material/Grid';
 import { Link } from "react-router-dom";
-
+import "./CardGrid.css"
 function Card(props) {
   const defaultCardTypeSX ={
     width: 250,
@@ -18,9 +15,10 @@ function Card(props) {
   let tempsx = props.sx ? props.sx : defaultCardTypeSX //? is if else
   return (
     <div>
-      <Link to="/careerinfo"><Box
-        sx={tempsx}          
-                    /></Link>
+      <Link to="/careerinfo">
+        <Box sx={tempsx}/>
+      </Link>
+      <h3 class="boxLabel">{props.text}</h3>
     </div>
   );
 }
