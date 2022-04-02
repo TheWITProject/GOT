@@ -11,16 +11,17 @@ import CareerMap from './main_pages/CareerMap.js';
 
 import CareerInformation from "./main_pages/CareerInformation.js";
 
-
+// routes links the pages 
+// <Route path='/careerinfo' element={<CareerInformation/>} />
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-        <Routes>
+        <Routes> 
 
-           <Route index element={<CareerMap />} />
+           <Route index element={<CareerInformation/>} />
             
     
-          <Route path='/careerinfo' element={<CareerInformation/>} />
+          
 
           </Routes>
           </BrowserRouter>

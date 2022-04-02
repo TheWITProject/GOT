@@ -1,10 +1,18 @@
-
 import './CareerInformation.css';
+import Header from "./Header";
+import TabCollection from "../components/TabCollection";
+
 
 function CareerInformation() {
   return (
-    <div className="CareerInformation">
-      <h1>Welcome to Software Engineering!!</h1>
+    <div>
+
+      <div className="CareerInformation">
+        <TabCollection/>
+        
+      </div>
+
+
     </div>
   );
 }
