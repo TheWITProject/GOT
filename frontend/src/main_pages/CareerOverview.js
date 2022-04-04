@@ -16,17 +16,14 @@ function CareerOverview() {
             <Grid container spacing={2}>
             <Grid item xs={8}>
   
-                <InfoBox/>
+                <InfoBox content = {"information"}/>
                 </Grid>
                 <InfoBox sx={{
                         width: 400,
                         height: 500,
-                        backgroundColor: 'primary.dark',
-                        '&:hover': {
-                        backgroundColor: 'primary.main',
-                        opacity: [0.9, 0.8, 0.7],
-                        },
-                    }}/>    
+                        backgroundColor: 'orange',
+                       
+                    }} content = {"another information"}/>    
             </Grid>
         </div>
           );

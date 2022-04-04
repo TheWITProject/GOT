@@ -12,19 +12,18 @@ function InfoBox(props) {
     height:500,
     marginLeft: 10,
     backgroundColor: 'primary.dark',
-    '&:hover': {
-        backgroundColor: 'primary.main',
-        opacity: [0.9, 0.8, 0.7],
-    },
+    
   }
  
   let temp_box_sx = props.sx ? props.sx : defaultBoxSX 
   return (
     <div>
-      <Link to="/careerinfo"><Box
-        sx={temp_box_sx}  
+      <Box sx={temp_box_sx}  >
+        <p>{props.content}</p>
+        </Box>
+
         
-        /></Link>      
+           
     </div>
   );
 }
