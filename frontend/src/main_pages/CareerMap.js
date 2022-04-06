@@ -2,7 +2,7 @@ import "./CareerMap.css";
 import CardGrid from "../components/CardGrid.js";
 import InteractiveBackground from "../components/InteractiveBackground.js";
 import "@fontsource/poppins";
-import Header from "./Header";
+import Header from "../components/Header.js";
 
 function CareerMap() {
   return (
