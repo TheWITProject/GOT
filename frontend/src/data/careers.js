@@ -23,5 +23,17 @@ export const careerInfo = [
     {
         careerName: "Web Developer",
         imageName: require("../assets/icons/webDeveloper.png"),
+    },
+    {
+        careerName: "Project Manager",
+        imageName: require("../assets/icons/webDeveloper.png"),
+    },
+    {
+        careerName: "Data Analyst",
+        imageName: require("../assets/icons/dataAnalyst.png"),
+    },
+    {
+        careerName: "Web Developer",
+        imageName: require("../assets/icons/webDeveloper.png"),
     }
 ];

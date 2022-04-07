@@ -3,6 +3,7 @@ import CardGrid from "../components/CardGrid.js";
 import InteractiveBackground from "../components/InteractiveBackground.js";
 import "@fontsource/poppins";
 import Header from "../components/Header.js";
+import Footer from "../components/Footer.js";
 import { Parallax, Background } from "react-parallax";
 import logo from "./background.png"
 const styles = {
@@ -22,14 +23,15 @@ function CareerMap() {
   return (
     <div>
       <InteractiveBackground/>
+      
         <div style={styles}>
     <Parallax bgImage={logo} bgImageSize={{height: '30px', maxWidth: '30px'}} strength={200}>
-      <div style={{ height: 700 }}>
-        <Header/>
+      <div style={{ height: 900 }}>
+      <Header/>
       </div>
     </Parallax>
     <Parallax strength={100}>
-      <div style={{ height: 1000 }}>
+      <div style={{ height:"100%", display: "inline-block"}}>
       <div id="intro">
           <h1>Career Map</h1>
           <p>
@@ -39,6 +41,11 @@ function CareerMap() {
           </p>
         </div>
         <CardGrid cardType={"careerMap"} />
+      </div>
+    </Parallax>
+    <Parallax strength={200}>
+      <div style={{ opacity: .5 , backgroundColor: "#F08063", height: 300 }}>
+      <Footer/>
       </div>
     </Parallax>
     </div>
