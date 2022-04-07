@@ -8,7 +8,6 @@ function Card(props) {
   const defaultCardTypeSX ={
     width: 250,
     height: 250,
-    marginLeft: 10,
     backgroundColor: 'orange',
     '&:hover': {
         backgroundColor: 'primary.main',

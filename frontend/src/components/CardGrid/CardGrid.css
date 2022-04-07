@@ -8,7 +8,9 @@ p,h1,h2,h3{
 
 .icon {
     display: block;
-    margin-left: auto;
+    margin-left: 20px ;
     margin-right: auto;
     margin-top: 30px;
+  
+    
   }
