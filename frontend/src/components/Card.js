@@ -1,6 +1,6 @@
 import Box from '@mui/material/Box';
 import { Link } from "react-router-dom";
-import "./CardGrid.css"
+import "./CardGrid/CardGrid.css"
 import {careerInfo} from "../data/careers.js"
 
 

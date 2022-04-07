@@ -1,5 +1,5 @@
 import "./CareerMap.css";
-import CardGrid from "../components/CardGrid.js";
+import CardGrid from "../components/CardGrid/CardGrid";
 import InteractiveBackground from "../components/InteractiveBackground.js";
 import "@fontsource/poppins";
 import Header from "../components/Header.js";

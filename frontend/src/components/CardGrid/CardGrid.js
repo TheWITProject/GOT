@@ -1,8 +1,8 @@
 import Grid from '@mui/material/Grid';
-import Card from '../components/Card.js'
+import Card from '../Card.js'
 import "@fontsource/poppins";
 import "./CardGrid.css" 
-import {careerInfo} from "../data/careers.js"
+import {careerInfo} from "../../data/careers.js"
 
 
 function CardGrid(props) {
