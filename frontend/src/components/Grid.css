@@ -1,0 +1,19 @@
+
+.item1 {
+    grid-column: 1 / span 3;
+    
+}
+  
+.item3{
+      grid-column: 1/ span 4;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    /*background-color: #cba2c6;*/
+    padding: 10px;
+}
+  
+  
