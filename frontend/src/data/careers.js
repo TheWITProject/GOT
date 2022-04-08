@@ -1,4 +1,3 @@
-
 export const careerInfo = [
     {
         careerName: "Software Engineer",
