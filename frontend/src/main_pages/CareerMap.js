@@ -6,6 +6,7 @@ import Header from "../components/Header/Header.js";
 import Footer from "../components/Footer.js";
 import { Parallax} from "react-parallax";
 import landingPage from "../assets/graphics/landingPage.png";
+import Login from "../components/Login";
 
 const styles = {
   fontFamily: "sans-serif",

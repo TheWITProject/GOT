@@ -2,6 +2,7 @@ import logo from '../../assets/logos/logo.png'
 import "./Header.css";
 import Fab from "@mui/material/Fab";
 import { Stack } from "@mui/material";
+import Login from '../Login';
 
 function Header() {
   return (
@@ -23,15 +24,7 @@ function Header() {
         >
           Career Map
         </Fab>
-        <Fab
-          sx={{ marginTop: 6 ,fontFamily:"Poppins"}}
-          variant="extended"
-          size="medium"
-          color="#F08063"
-          aria-label="add"
-        >
-          Sign Up
-        </Fab>
+        <Login/>
         <Fab
           sx={{ marginTop: 6,fontFamily:"Poppins" }}
           variant="extended"
@@ -39,7 +32,7 @@ function Header() {
           color="#F08063"
           aria-label="add"
         >
-          Login
+          Sign Up
         </Fab>
       </Stack>
     </div>
