@@ -25,11 +25,7 @@ function CardGrid(props) {
         {careerInfo.map((data, key) => { //key is name and value is what the property is 
           return (
             <Grid item key={key} xs={4}>
-<<<<<<< HEAD:frontend/src/components/CardGrid.js
-                <Card sx={tempsx} text={data.careerName}/> 
-=======
                 <Card sx={tempsx} text={data.careerName} image ={data.imageName}/>
->>>>>>> FF_GOT25:frontend/src/components/CardGrid/CardGrid.js
             </Grid>
           );
         })} 
