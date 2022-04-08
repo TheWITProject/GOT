@@ -1,0 +1,18 @@
+#position {
+    position: absolute;
+  }
+  
+  p,h1{
+    font-family: "Poppins";
+  }
+  
+  #intro{
+    align-self: center;
+    margin-left: 6%;
+    margin-right: 7%;
+    border-radius: 10px;
+    padding-left: 5px;
+    background-color: #e9ebed;
+  
+    
+  }
