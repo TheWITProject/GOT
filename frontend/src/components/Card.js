@@ -1,14 +1,13 @@
-import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
-import Grid from '@mui/material/Grid';
 import { Link } from "react-router-dom";
+import "./CardGrid/CardGrid.css"
+import {careerInfo} from "../data/careers.js"
+
 
 function Card(props) {
   const defaultCardTypeSX ={
     width: 250,
     height: 250,
-    marginLeft: 10,
     backgroundColor: 'orange',
     '&:hover': {
         backgroundColor: 'primary.main',
@@ -16,11 +15,15 @@ function Card(props) {
     },
   }
   let tempsx = props.sx ? props.sx : defaultCardTypeSX //? is if else
+
   return (
     <div>
-      <Link to="/careerinfo"><Box
-        sx={tempsx}          
-                    /></Link>
+      <Link to="/careerinfo">
+        <Box sx={tempsx}>
+          <img class = "icon" height= "200vmin" src={props.image} alt="icon"/>
+        </Box>
+      </Link>
+      <h3 class="boxLabel">{props.text}</h3>
     </div>
   );
 }
