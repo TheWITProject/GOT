@@ -22,7 +22,7 @@ function CardGrid(props) {
   let tempsx = props.cardType === "careerMap" ? careerCardTypeSX : undefined //? is if else
   return (
     <Grid container spacing={8}>
-        {careerInfo.map((data, key) => {
+        {careerInfo.map((data, key) => { //key is name and value is what the property is 
           return (
             <Grid item key={key} xs={4}>
                 <Card sx={tempsx} text={data.careerName} image ={data.imageName}/>
