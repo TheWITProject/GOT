@@ -1,6 +1,6 @@
 import "./CareerInformation.css";
 import Header from "../components/Header/Header.js";
-import TabCollection from "../components/TabCollection";
+import TabCollection from "../components/TabCollection/TabCollection.js";
 import InteractiveBackground from "../components/InteractiveBackground.js";
 import { Parallax} from "react-parallax";
 import "@fontsource/poppins";
@@ -15,7 +15,7 @@ function CareerInformation() {
             <Header />
           </div>
        
-          <div style={{ float:"bottom", height: 200, width:"fit-content", overflow: "hidden"}}>
+          <div style={{ float:"bottom", overflow: "auto"}}>
             <TabCollection/>
           </div>
       </div>

@@ -6,7 +6,7 @@ import Header from "../components/Header/Header.js";
 import Footer from "../components/Footer.js";
 import { Parallax} from "react-parallax";
 import landingPage from "../assets/graphics/landingPage.png";
-import Login from "../components/Login";
+
 
 const styles = {
   fontFamily: "sans-serif",
@@ -21,7 +21,7 @@ function CareerMap() {
         <Parallax
           bgImage={landingPage}
           bgImageSize={{ height: "30px", maxWidth: "30px" }}
-          strength={200}
+          strength={70}
         >
           <div style={{ height: 900 }}>
             <Header />
@@ -42,7 +42,7 @@ function CareerMap() {
         </Parallax>
         <Parallax strength={200}>
           <div
-            style={{ opacity: 0.5, backgroundColor: "#F08063", height: 300 }}
+            style={{ opacity: 0.5, backgroundColor: "#F7C6BC", height: 300 }}
           >
             <Footer />
           </div>

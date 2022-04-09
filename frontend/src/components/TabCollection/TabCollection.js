@@ -6,7 +6,7 @@ import TabsListUnstyled from '@mui/base/TabsListUnstyled';
 import TabPanelUnstyled from '@mui/base/TabPanelUnstyled';
 import { buttonUnstyledClasses } from '@mui/base/ButtonUnstyled';
 import TabUnstyled, { tabUnstyledClasses } from '@mui/base/TabUnstyled';
-import CareerOverview from '../main_pages/CareerOverview.js';
+import CareerOverview from '../../main_pages/CareerOverview.js';
 
 
 const blue = {
@@ -23,7 +23,7 @@ const blue = {
 };
 
 const Tab = styled(TabUnstyled)`
-  font-family: IBM Plex Sans, sans-serif;
+  font-family: Poppins;
   color: black;
   cursor: pointer;
   font-size: 0.875rem;
@@ -61,19 +61,22 @@ const Tab = styled(TabUnstyled)`
 
 const TabPanel = styled(TabPanelUnstyled)`
   width: 100%;
-  font-family: IBM Plex Sans, sans-serif;
+  font-family: "Poppins";
   font-size: 0.875rem;
 `;
 
 const TabsList = styled(TabsListUnstyled)`
-  min-width: 320px;
+  width: 40%;
   border-radius: 8px;
   margin-bottom: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
   align-content: space-between;
-  margin-left: 20px
+  margin-left: 70px;
+  font-family: Poppins;
+
+  
 `;
 
 export default function UnstyledTabsCustomized() {
@@ -81,11 +84,12 @@ export default function UnstyledTabsCustomized() {
     
     <TabsUnstyled defaultValue={0}>
       <TabsList>
-        <Tab>One</Tab>
-        <Tab>Two</Tab>
-        <Tab>Three</Tab>
+        <Tab>Career Overview</Tab>
+        <Tab>Professional Stories</Tab>
+        <Tab>Discussion Forum</Tab>
       </TabsList>
-      <TabPanel value={0}>
+      <TabPanel scrollButtons="auto" value={0}>
+
         <CareerOverview/>
       </TabPanel>
       <TabPanel value={1}>Second content</TabPanel>

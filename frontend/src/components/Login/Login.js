@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import Fab from "@mui/material/Fab";
 import "./Login.css";
-import loginGraphic from "../assets/graphics/login.png";
+import loginGraphic from "../../assets/graphics/login.png";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 
@@ -51,7 +51,7 @@ export default function Login() {
         <Box sx={style}>
           <div id="outer">
             <div class="sections" id="left">
-              <h1>Sign in to &lt;GOT/&gt;</h1>
+              <h1>Log in to &lt;GOT/&gt;</h1>
               <br />
               <br />
               <TextField
