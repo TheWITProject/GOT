@@ -1,11 +1,12 @@
 import Box from '@mui/material/Box';
 import { Link } from "react-router-dom";
-import "./CardGrid.css"
+import "./CardGrid/CardGrid.css"
+
+
 function Card(props) {
   const defaultCardTypeSX ={
     width: 250,
     height: 250,
-    marginLeft: 10,
     backgroundColor: 'orange',
     '&:hover': {
         backgroundColor: 'primary.main',
@@ -13,10 +14,13 @@ function Card(props) {
     },
   }
   let tempsx = props.sx ? props.sx : defaultCardTypeSX //? is if else
+
   return (
     <div>
       <Link to="/careerinfo">
-        <Box sx={tempsx}/>
+        <Box sx={tempsx}>
+          <img class = "icon" height= "200vmin" src={props.image} alt="icon"/>
+        </Box>
       </Link>
       <h3 class="boxLabel">{props.text}</h3>
     </div>

@@ -53,10 +53,10 @@ function InteractiveBackground() {
         },
         particles: {
           color: {
-            value: "#f0c4bb",
+            value: "#FBE6E1",
           },
           links: {
-            color: "#f0c4bb",
+            color: "#FBE6E1",
             distance: 150,
             enable: true,
             opacity: 1,
@@ -76,7 +76,7 @@ function InteractiveBackground() {
           number: {
             density: {
               enable: true,
-              area: 800,
+              area: 1000,
             },
             value: 80,
           },

@@ -1,21 +1,26 @@
 export const careerInfo = [
     {
-        careerName: "Software Engineer"
+        careerName: "Software Engineer",
+        imageName: require("../assets/icons/webDeveloper.png"),
     },
     {
-        careerName: "UI/UX Designer"
+        careerName: "UI/UX Designer",
+        imageName: require("../assets/icons/webDeveloper.png"),
     },
     {
-        careerName: "QA Tester"
+        careerName: "QA Tester",
+        imageName: require("../assets/icons/webDeveloper.png"),
     },
     {
-        careerName: "Project Manager"
+        careerName: "Project Manager",
+        imageName: require("../assets/icons/webDeveloper.png"),
     },
     {
-        careerName: "Data Analyst"
+        careerName: "Data Analyst",
+        imageName: require("../assets/icons/dataAnalyst.png"),
     },
     {
-        careerName: "Web Developer"
-    },
-
+        careerName: "Web Developer",
+        imageName: require("../assets/icons/webDeveloper.png"),
+    }
 ];

@@ -11,17 +11,19 @@ import CareerMap from './main_pages/CareerMap.js';
 
 import CareerInformation from "./main_pages/CareerInformation.js";
 
-
+// routes links the pages 
+// <Route path='/careerinfo' element={<CareerInformation/>} />
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-        <Routes>
+        <Routes> 
 
-           <Route index element={<CareerMap />} />
+        <Route index element={<CareerMap />} />
             
     
-          <Route path='/careerinfo' element={<CareerInformation/>} />
-
+            <Route path='/careerinfo' element={<CareerInformation/>} />
+  
+       
           </Routes>
           </BrowserRouter>
   </React.StrictMode>,
@@ -31,4 +33,6 @@ ReactDOM.render(
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+//<Route path='/careeroverview' element={<CareerOverview/>} />
+
 reportWebVitals();
