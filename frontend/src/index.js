@@ -10,7 +10,6 @@ import reportWebVitals from './reportWebVitals';
 import CareerMap from './main_pages/CareerMap.js';
 
 import CareerInformation from "./main_pages/CareerInformation.js";
-import CareerOverview from "./main_pages/CareerOverview.js";
 
 // routes links the pages 
 // <Route path='/careerinfo' element={<CareerInformation/>} />
