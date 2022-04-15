@@ -92,7 +92,7 @@ export default function UnstyledTabsCustomized() {
         <CareerOverview/>
       </TabPanel>
       <TabPanel value={1}>
-      <ProfessionalForm/>
+             <ProfessionalForm/>
       </TabPanel>
       <TabPanel value={2}>Third content</TabPanel>
     </TabsUnstyled>
