@@ -7,7 +7,7 @@ import TabPanelUnstyled from '@mui/base/TabPanelUnstyled';
 import { buttonUnstyledClasses } from '@mui/base/ButtonUnstyled';
 import TabUnstyled, { tabUnstyledClasses } from '@mui/base/TabUnstyled';
 import CareerOverview from '../../main_pages/CareerOverview.js';
-
+import ProfessionalForm from '../ProfessionalForm/ProfessionalForm.js';
 
 const blue = {
   50: '#E0E2E5',
@@ -31,9 +31,9 @@ const Tab = styled(TabUnstyled)`
   background-color: #FAE1DD;
   width: 100%;
   padding: 12px 16px;
-  margin: 6px 6px;
+  margin: 12px 12px;
   border: none;
-  border-radius: 20px;
+  border-radius: 30px;
   display: flex;
   justify-content: center;
 
@@ -89,10 +89,11 @@ export default function UnstyledTabsCustomized() {
         <Tab>Discussion Forum</Tab>
       </TabsList>
       <TabPanel scrollButtons="auto" value={0}>
-
         <CareerOverview/>
       </TabPanel>
-      <TabPanel value={1}>Second content</TabPanel>
+      <TabPanel value={1}>
+      <ProfessionalForm/>
+      </TabPanel>
       <TabPanel value={2}>Third content</TabPanel>
     </TabsUnstyled>
    

@@ -37,7 +37,6 @@ export default function Login() {
         sx={{ marginTop: 6, fontFamily: "Poppins" }}
         variant="extended"
         size="medium"
-        color="#F08063"
         aria-label="add"
       >
         Log in
