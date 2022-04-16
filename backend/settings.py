@@ -38,8 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'api.apps.ApiConfig',
     'rest_framework',
+    'accounts.apps.AccountsConfig'
 ]
 
 MIDDLEWARE = [
@@ -78,10 +78,17 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'gotDataBase',
+        'USER': 'postgres',
+        'PASSWORD': 'root',
+        'HOST': 'localhost'
+     }
 }
+# email 
+# GOT.GameofTech@gmail.com
+# app pass: empevujovfxosgax
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 
 # Password validation
@@ -128,3 +135,5 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'frontend', 'build', 'static')]
+
+# AUTH_USER_MODEL = 'accounts.UserAccount'
