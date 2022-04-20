@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-p-ua=(*9^4&$-fvycsc_9)k+$pa=t8_l9+e(zba4o8o2q(+doo
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'api.apps.ApiConfig',
     'rest_framework',
-    #'corsheaders', 
+   
     
 
 ]
