@@ -1,5 +1,6 @@
 import "./ProfStories.css";
 import CardGrid from "../components/CardGrid/CardGrid.js";
+import ProfCard from "../components/CardGrid/ProfCard";
 import InteractiveBackground from "../components/InteractiveBackground.js";
 import "@fontsource/poppins";
 import Header from "../components/Header/Header.js";
@@ -18,7 +19,7 @@ function ProfStories() {
     <div>
       
           <div style={{ height: "100%", display: "inline-block" }}>
-            <CardGrid cardType={"careerMap"} />
+            <ProfCard cardType={"storiesCard"} />
           </div>
         
         <Parallax strength={200}>
