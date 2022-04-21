@@ -7,7 +7,7 @@ import TabPanelUnstyled from '@mui/base/TabPanelUnstyled';
 import { buttonUnstyledClasses } from '@mui/base/ButtonUnstyled';
 import TabUnstyled, { tabUnstyledClasses } from '@mui/base/TabUnstyled';
 import CareerOverview from '../../main_pages/CareerOverview.js';
-
+import ProfStories from '../../main_pages/ProfStories.js';
 
 const blue = {
   50: '#E0E2E5',
@@ -92,7 +92,9 @@ export default function UnstyledTabsCustomized() {
 
         <CareerOverview/>
       </TabPanel>
-      <TabPanel value={1}>Second content</TabPanel>
+      <TabPanel scrollButtons="auto" value={1}>
+        <ProfStories/>
+        </TabPanel>
       <TabPanel value={2}>Third content</TabPanel>
     </TabsUnstyled>
    

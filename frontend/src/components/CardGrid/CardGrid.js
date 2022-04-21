@@ -6,6 +6,7 @@ import {careerInfo} from "../../data/careers.js"
 
 
 function CardGrid(props) {
+  
   const careerCardTypeSX ={
     width: 250,
     height: 250,
@@ -19,7 +20,9 @@ function CardGrid(props) {
     borderRadius: 3,
     borderColor: '#E9EBED',
   }
+  
   let tempsx = props.cardType === "careerMap" ? careerCardTypeSX : undefined //? is if else
+  
   return (
     <Grid container spacing={8}>
         {careerInfo.map((data, key) => { //key is name and value is what the property is 
