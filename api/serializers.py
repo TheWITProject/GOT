@@ -1,5 +1,6 @@
 from rest_framework.serializers import ModelSerializer
 from .models import Note
+from .models import Careers
 
 #import this in views
 class NoteSerializer(ModelSerializer):
@@ -7,3 +8,8 @@ class NoteSerializer(ModelSerializer):
         model = Note
         fields = '__all__'
          #list of attributes you want to serialize in this case all attributes
+
+class CareersSerializer(ModelSerializer):
+    class Meta:
+        model = Careers
+        fields = '__all__'
