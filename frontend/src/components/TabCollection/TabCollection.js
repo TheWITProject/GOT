@@ -8,6 +8,7 @@ import { buttonUnstyledClasses } from '@mui/base/ButtonUnstyled';
 import TabUnstyled, { tabUnstyledClasses } from '@mui/base/TabUnstyled';
 import CareerOverview from '../../main_pages/CareerOverview.js';
 import ProfStories from '../../main_pages/ProfStories.js';
+import CardGrid from '../CardGrid/CardGrid.js';
 
 const blue = {
   50: '#E0E2E5',
@@ -93,7 +94,7 @@ export default function UnstyledTabsCustomized() {
         <CareerOverview/>
       </TabPanel>
       <TabPanel scrollButtons="auto" value={1}>
-        <ProfStories/>
+        <CardGrid cardType={"storiesCard"}/>
         </TabPanel>
       <TabPanel value={2}>Third content</TabPanel>
     </TabsUnstyled>
