@@ -1,5 +1,5 @@
 import "./CareerOverview.css";
-import InfoBox from "../components/InfoBox.js";
+import InfoBox from "../components/InfoBox/InfoBox.js";
 import "../components/Grid.css";
 import { careerDetails } from "../data/careerOverviewData.js";
 

@@ -14,7 +14,7 @@ function Card(props) {
     },
   }
   let tempsx = props.sx ? props.sx : defaultCardTypeSX //? is if else
-
+  if(props.cardType==="careerMap"){
   return (
     <div>
       <Link to="/careerinfo">
@@ -25,6 +25,17 @@ function Card(props) {
       <h3 class="boxLabel">{props.text}</h3>
     </div>
   );
+  }else{
+    return(
+    <div>
+        <Box sx={tempsx}>
+          <img class = "icon" height= "200vmin" src={props.image} alt="icon"/>
+        </Box>
+      <h3 class="boxLabel">{props.text}</h3>
+      
+    </div>
+    );
+  }
 }
 
 export default Card;

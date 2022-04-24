@@ -1,40 +1,40 @@
-export const careerInfo = [
+export const profInfo = [
     {
-        careerName: "Software Engineer",
+        careerName: "Lauren @ Meta",
         imageName: require("../assets/icons/webDeveloper.png"),
     },
     {
-        careerName: "Web Developer",
-        imageName: require("../assets/icons/webDeveloper.png"),
-    },
-
-    {
-        careerName: "Data Scientist",
-        imageName: require("../assets/icons/webDeveloper.png"),
-    },
-    {
-        careerName: "ML Scientist",
+        careerName: "Mary @ Linkedln",
         imageName: require("../assets/icons/webDeveloper.png"),
     },
 
     {
-        careerName: "UI/UX Designer",
+        careerName: "Carla @ Amazon",
         imageName: require("../assets/icons/webDeveloper.png"),
     },
     {
-        careerName: "QA Tester",
+        careerName: "Annie @ Attentive",
+        imageName: require("../assets/icons/webDeveloper.png"),
+    },
+
+    {
+        careerName: "Bloom @ Bloomberg",
         imageName: require("../assets/icons/webDeveloper.png"),
     },
     {
-        careerName: "Information Security Analyst",
+        careerName: "Flora @ Citi",
         imageName: require("../assets/icons/webDeveloper.png"),
     },
     {
-        careerName: "Project Manager",
+        careerName: "Nancy @ JPMorgan",
         imageName: require("../assets/icons/webDeveloper.png"),
     },
     {
-        careerName: "Mobile Application Designer",
+        careerName: "Marie @ Meta",
+        imageName: require("../assets/icons/webDeveloper.png"),
+    },
+    {
+        careerName: "An @ Figma",
         imageName: require("../assets/icons/webDeveloper.png"),
     }
 ];
