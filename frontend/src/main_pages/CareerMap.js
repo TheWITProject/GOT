@@ -6,7 +6,9 @@ import Header from "../components/Header/Header.js";
 import Footer from "../components/Footer.js";
 import { Parallax} from "react-parallax";
 import landingPage from "../assets/graphics/landingPage.png";
+import React, {useState,useEffect} from 'react'
 import { careerInfo } from "../data/careers";
+
 
 
 const styles = {
@@ -14,6 +16,8 @@ const styles = {
   textAlign: "center",
 };
 function CareerMap() {
+
+
   return (
     <div>
       <InteractiveBackground />
