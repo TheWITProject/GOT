@@ -4,6 +4,7 @@ import Fab from "@mui/material/Fab";
 import { Stack } from "@mui/material";
 import Login from '../Login/Login.js';
 import Signup from '../Signup/Signup.js';
+import Link from '@mui/material/Link';
 
 function Header() {
   return (
@@ -22,9 +23,12 @@ function Header() {
           size="medium"
           color="F08063"
           aria-label="add"
+          to='/careerinfo' component={Link}
         >
           Career Map
         </Fab>
+
+        
         <Login/>
         <Signup/>
 

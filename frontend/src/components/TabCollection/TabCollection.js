@@ -8,6 +8,7 @@ import { buttonUnstyledClasses } from '@mui/base/ButtonUnstyled';
 import TabUnstyled, { tabUnstyledClasses } from '@mui/base/TabUnstyled';
 import CareerOverview from '../../main_pages/CareerOverview.js';
 import CardGrid from '../CardGrid/CardGrid.js';
+import ProfessionalForm from '../ProfessionalForm/ProfessionalForm.js';
 
 const blue = {
   50: '#E0E2E5',
@@ -31,9 +32,9 @@ const Tab = styled(TabUnstyled)`
   background-color: #FAE1DD;
   width: 100%;
   padding: 12px 16px;
-  margin: 6px 6px;
+  margin: 12px 12px;
   border: none;
-  border-radius: 20px;
+  border-radius: 30px;
   display: flex;
   justify-content: center;
 
@@ -83,19 +84,24 @@ export default function UnstyledTabsCustomized() {
   return (
     
     <TabsUnstyled defaultValue={0}>
+
       <TabsList>
         <Tab>Career Overview</Tab>
         <Tab>Professional Stories</Tab>
         <Tab>Discussion Forum</Tab>
       </TabsList>
-      <TabPanel scrollButtons="auto" value={0}>
 
+      <TabPanel scrollButtons="auto" value={0}>
         <CareerOverview/>
       </TabPanel>
+
       <TabPanel scrollButtons="auto" value={1}>
+        <ProfessionalForm/>
         <CardGrid cardType={"storiesCard"}/>
         </TabPanel>
+
       <TabPanel value={2}>Third content</TabPanel>
+      
     </TabsUnstyled>
    
   );
