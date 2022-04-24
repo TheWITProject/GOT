@@ -1,4 +1,3 @@
-import "./CareerOverview.css";
 import InfoBox from "../components/InfoBox/InfoBox.js";
 import "../components/Grid.css";
 import {storyDetails} from "../data/profStoriesData.js";
@@ -16,7 +15,7 @@ const profStorySX ={
   marginTop: 3,
   marginBottom: 3
 }
-function ProfPopup() {
+function ProfessionalStory() {
   return (
     <div style={{overflow:"auto"}}>
       <ProfPopupBox
@@ -27,4 +26,4 @@ function ProfPopup() {
   );
 }
 
-export default ProfPopup;
+export default ProfessionalStory;

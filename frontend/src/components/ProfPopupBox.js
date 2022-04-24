@@ -16,7 +16,7 @@ function ProfPopupBox(props) {
   }
  
   let temp_box_sx = props.sx ? props.sx : defaultBoxSX
-  //const stats = props.isStats
+  
   
   return (
     <div>
