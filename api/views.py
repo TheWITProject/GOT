@@ -1,4 +1,5 @@
 
+from urllib import response
 from django.shortcuts import render
 from django.http import JsonResponse
 from rest_framework.response import Response 
@@ -29,6 +30,17 @@ def getNote(request,pk):
     serializer = NoteSerializer(notes, many=False)
     #many -> do you want to serialize multiple objects or just one?
     return Response(serializer.data)
+
+@api_view(['PUT']) #put is for updating items
+def updateNote(request,pk):
+    data = request.data
+    note = Note.objects.get(id=pk)
+    serializer = NoteSerializer(instance=note, data=data)
+    if serializer.is_valid():
+        serializer.save()
+    return Response(serializer.data)
+
+
 
 #HTTP methods:
 # @api_view(['GET'])
