@@ -37,6 +37,7 @@ export default function Login() {
         sx={{ marginTop: 6, fontFamily: "Poppins" }}
         variant="extended"
         size="medium"
+        color="#F08063"
         aria-label="add"
       >
         Log in
@@ -48,8 +49,8 @@ export default function Login() {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <div id="outer">
-            <div class="sections" id="left">
+          <div id="login_outer">
+            <div class="sections" id="login_left">
               <h1>Log in to &lt;GOT/&gt;</h1>
               <br />
               <br />
@@ -89,8 +90,8 @@ export default function Login() {
               </Fab>
             </div>
 
-            <div class="sections" id="right">
-              <img id="graphic" src={loginGraphic} alt="Logo" />
+            <div class="sections" id="login_right">
+              <img id="login_graphic" src={loginGraphic} alt="Logo" />
             </div>
           </div>
         </Box>

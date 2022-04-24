@@ -11,7 +11,7 @@ const styleBox = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: "60%",
+  width: "70%",
   height: "70%",
   bgcolor: "background.paper",
   border: "2px solid #000",
@@ -20,8 +20,9 @@ const styleBox = {
   overflow: "scroll",
 };
 const styleModal = {
-  overflow: "scroll",
+
   height: "100%",
+  width: "100%"
 };
 
 export default function Login() {
@@ -57,13 +58,12 @@ export default function Login() {
         sx={styleModal}
       >
         <Box sx={styleBox}>
-          <div id="outer">
+          <div id="pf_outer">
             <h2>
-              Share your story to be posted on &lt;/GOT&gt;! We will review each
-              story after you submit !
+              Share your story with &lt;/GOT&gt;! 
             </h2>
-            <div id="top">
-              <div id="left">
+            <div id="pf_top">
+              <div id="pf_left">
                 <FormComponent
                   title="Hey there, my name is..."
                   placeholder="Enter Your Name"
@@ -85,12 +85,12 @@ export default function Login() {
                   placeholder="Enter Your Name"
                 />
               </div>
-              <div id="right">
+              <div id="pf_right">
                 <img id ="mailbox"height="500vmin" src={mailbox} alt="mailbox" />
               </div>
             </div>
 
-            <div id="bottom">
+            <div id="pf_bottom">
               <h2>Let's move onto the fun part!</h2>
               <FormComponent
                   title="A little bit about yourself:"

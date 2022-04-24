@@ -12,10 +12,11 @@ const styleInput ={
   };
 const styleInputLabel={
     marginBottom:"0px",
+    
 }
 function FormComponent(props) {
   return (
-    <div id="outer">
+    <div id="form_outer">
       <h3>{props.title}</h3>
       <FormControl>
         <InputLabel sx= {styleInputLabel} htmlFor="my-input"><p>{props.placeholder}</p></InputLabel>

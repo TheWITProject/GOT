@@ -1,4 +1,4 @@
-#outer{
+#pf_outer{
     display: flex;
     flex-direction: column;
 
@@ -6,25 +6,25 @@
     width: 100%;
 }
 
-#top{
+#pf_top{
     display: flex;
     flex-direction: row;
 }
 
-#left{
+#pf_left{
     width: 70%;
 }
-#right{
+#pf_right{
     display:flex;
     flex-direction: row;
 }
 #mailbox{
-    position: absolute;
+    position: relative;
     float: right;
     padding-bottom: 250px;
 }
 
-#bottom{
+#pf_bottom{
     display: flex;
     flex-direction: column;
     padding-bottom: 20px;
