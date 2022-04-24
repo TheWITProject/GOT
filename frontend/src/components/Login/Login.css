@@ -1,4 +1,4 @@
-#outer{
+#login_outer{
     display: flex;
     flex-direction: row;
 
@@ -6,7 +6,7 @@
     width: 100%;
 }
 
-#left{
+#login_left{
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -17,13 +17,13 @@
     overflow: hidden;
 }
 
-#right{
+#login_right{
     height: 100%;
     width: 50%; 
     overflow: hidden;
 }
 
-#graphic{
+#login_graphic{
     width: 100%;
     object-fit: cover;
 }

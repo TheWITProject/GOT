@@ -7,6 +7,8 @@ import Footer from "../components/Footer.js";
 import { Parallax} from "react-parallax";
 import landingPage from "../assets/graphics/landingPage.png";
 import React, {useState,useEffect} from 'react'
+import { careerInfo } from "../data/careers";
+
 
 
 const styles = {
@@ -40,7 +42,7 @@ function CareerMap() {
                 Diam maecenas viverra dictumst orci pellentesque phasellus.
               </p>
             </div>
-            <CardGrid cardType={"careerMap"} />
+            <CardGrid cardType={"careerMap"}/>
           </div>
         </Parallax>
         <Parallax strength={200}>
