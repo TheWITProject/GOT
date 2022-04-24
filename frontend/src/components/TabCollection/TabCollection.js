@@ -7,6 +7,7 @@ import TabPanelUnstyled from '@mui/base/TabPanelUnstyled';
 import { buttonUnstyledClasses } from '@mui/base/ButtonUnstyled';
 import TabUnstyled, { tabUnstyledClasses } from '@mui/base/TabUnstyled';
 import CareerOverview from '../../main_pages/CareerOverview.js';
+import CardGrid from '../CardGrid/CardGrid.js';
 import ProfessionalForm from '../ProfessionalForm/ProfessionalForm.js';
 
 const blue = {
@@ -83,18 +84,24 @@ export default function UnstyledTabsCustomized() {
   return (
     
     <TabsUnstyled defaultValue={0}>
+
       <TabsList>
         <Tab>Career Overview</Tab>
         <Tab>Professional Stories</Tab>
         <Tab>Discussion Forum</Tab>
       </TabsList>
+
       <TabPanel scrollButtons="auto" value={0}>
         <CareerOverview/>
       </TabPanel>
-      <TabPanel value={1}>
-             <ProfessionalForm/>
-      </TabPanel>
+
+      <TabPanel scrollButtons="auto" value={1}>
+        <ProfessionalForm/>
+        <CardGrid cardType={"storiesCard"}/>
+        </TabPanel>
+
       <TabPanel value={2}>Third content</TabPanel>
+      
     </TabsUnstyled>
    
   );
