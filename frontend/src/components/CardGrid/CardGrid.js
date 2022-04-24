@@ -1,13 +1,32 @@
 import Grid from "@mui/material/Grid";
 import Card from "../Card.js";
 import "@fontsource/poppins";
-import "./CardGrid.css";
-import { careerInfo } from "../../data/careers.js";
+
+import "./CardGrid.css" 
+import {careerInfo} from "../../data/careers.js"
+import React, {useState,useEffect} from 'react'
 import { profInfo } from "../../data/profs.js";
 import { Link } from "react-router-dom";
 
+
 function CardGrid(props) {
+  let [career,setCareers]=useState([])
+  
+  useEffect(() => {
+    getCareers()
+  }, [])
+
+  let getCareers = async () =>{
+    let response = await fetch("/api/careers/")
+    let data = await response.json()
+    console.log('Data:',data)
+    setCareers(data)
+  }
+
+
+
   const careerCardTypeSX = {
+
     width: 250,
     height: 250,
     marginLeft: 10,
@@ -18,8 +37,10 @@ function CardGrid(props) {
     },
     border: 8,
     borderRadius: 3,
-    borderColor: "#E9EBED",
-  };
+
+    borderColor: '#E9EBED',
+  }
+ 
 
   let tempsx =
     props.cardType === "careerMap" || props.cardType === "storiesCard"
@@ -38,6 +59,7 @@ function CardGrid(props) {
                 text={data.careerName}
                 image={data.imageName}
               />
+
             </Grid>
           );
         })}
