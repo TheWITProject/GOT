@@ -10,6 +10,8 @@ import reportWebVitals from './reportWebVitals';
 import CareerMap from './main_pages/CareerMap.js';
 
 import CareerInformation from "./main_pages/CareerInformation.js";
+import ProfPopup from './main_pages/ProfPopup';
+import CardGrid from './components/CardGrid/CardGrid';
 
 // routes links the pages 
 // <Route path='/careerinfo' element={<CareerInformation/>} />
@@ -22,10 +24,16 @@ ReactDOM.render(
             
     
             <Route path='/careerinfo' element={<CareerInformation/>} />
+            <Route path='/careerinfo/profStory' element={<ProfPopup/>} />
   
        
           </Routes>
-          </BrowserRouter>
+        
+        
+
+        
+        
+      </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

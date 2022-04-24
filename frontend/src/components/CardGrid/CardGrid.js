@@ -4,6 +4,7 @@ import "@fontsource/poppins";
 import "./CardGrid.css" 
 import {careerInfo} from "../../data/careers.js"
 import {profInfo} from "../../data/profs.js"
+import { Link } from "react-router-dom";
 
 
 function CardGrid(props) {
@@ -25,6 +26,7 @@ function CardGrid(props) {
   let tempsx = (props.cardType === "careerMap" || props.cardType === "storiesCard") ? careerCardTypeSX : undefined
   if(props.cardType=="storiesCard"){
   return (
+    
     <Grid container spacing={8}>
         {profInfo.map((data, key) => { //key is name and value is what the property is 
           return (
@@ -34,6 +36,7 @@ function CardGrid(props) {
           );
         })} 
     </Grid>
+   
   
   );
       }

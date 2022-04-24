@@ -1,9 +1,10 @@
 import "./CareerOverview.css";
 import InfoBox from "../components/InfoBox/InfoBox.js";
 import "../components/Grid.css";
-import { careerDetails } from "../data/careerOverviewData.js";
+import {storyDetails} from "../data/profStoriesData.js";
+import ProfPopupBox from "../components/InfoBox/ProfPopupBox.js"
 
-const careerOverviewSX ={
+const profStorySX ={
   width: "fit-content(20em)",
   height: "fit-content(20em)",
   backgroundColor: "white",
@@ -15,21 +16,15 @@ const careerOverviewSX ={
   marginTop: 3,
   marginBottom: 3
 }
-function CareerOverview() {
+function ProfPopup() {
   return (
     <div style={{overflow:"auto"}}>
-      <InfoBox
-        sx={careerOverviewSX}
-        details={careerDetails[0]}
-        isStats={false}
-      />
-      <InfoBox
-        sx={careerOverviewSX}
-        details={careerDetails[0]}
-        isStats={true}
+      <ProfPopupBox
+        sx={profStorySX}
+        details={storyDetails[0]}
       />
     </div>
   );
 }
 
-export default CareerOverview;
+export default ProfPopup;
