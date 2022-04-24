@@ -1,7 +1,7 @@
 import InfoBox from "../components/InfoBox/InfoBox.js";
 import "../components/Grid.css";
 import {storyDetails} from "../data/profStoriesData.js";
-import ProfPopupBox from "../components/InfoBox/ProfPopupBox.js"
+import ProfessionalStoryContent from "../components/ProfessionalStoryContent"
 
 const profStorySX ={
   width: "fit-content(20em)",
@@ -18,7 +18,7 @@ const profStorySX ={
 function ProfessionalStory() {
   return (
     <div style={{overflow:"auto"}}>
-      <ProfPopupBox
+      <ProfessionalStoryContent
         sx={profStorySX}
         details={storyDetails[0]}
       />

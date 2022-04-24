@@ -17,13 +17,13 @@ function Header() {
         alignItems="flex-end"
         spacing={8}
       >
+ 
         <Fab
           sx={{ marginTop: 6 ,fontFamily:"Poppins"}}
           variant="extended"
           size="medium"
           color="F08063"
           aria-label="add"
-          to='/careerinfo' component={Link}
         >
           Career Map
         </Fab>
