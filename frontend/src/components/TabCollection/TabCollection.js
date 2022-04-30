@@ -80,7 +80,35 @@ const TabsList = styled(TabsListUnstyled)`
   
 `;
 
-export default function UnstyledTabsCustomized() {
+ class UnstyledTabsCustomized extends component {
+  constructor(props) {
+    super(props)
+    const state = {
+      modalShouldDisplay: false,
+      modalContents: null,
+      displayModal: this.displayModal,
+      closeModal: null,
+    }
+
+    this.state = state;
+  }
+
+  displayModal = (providedContents) => {
+    this.setState({
+      modalShouldDisplay: true,
+      modalContents: providedContents
+    })
+  }
+
+   
+  render() {
+    const modal = <div>NO MODAL</div>
+
+    if(this.state.modalShouldDisplay) {
+      modal = this.state.modalContents
+    }
+
+
   return (
     
     <TabsUnstyled defaultValue={0}>
@@ -96,8 +124,9 @@ export default function UnstyledTabsCustomized() {
       </TabPanel>
 
       <TabPanel scrollButtons="auto" value={1}>
+        {modal}
         <ProfessionalForm/>
-        <CardGrid cardType={"storiesCard"}/>
+        <CardGrid cardType={"storiesCard"} displayModal={this.state.displayModal}/>
         </TabPanel>
 
       <TabPanel value={2}>Third content</TabPanel>
@@ -105,4 +134,7 @@ export default function UnstyledTabsCustomized() {
     </TabsUnstyled>
    
   );
+  }
 }
+
+export default UnstyledTabsCustomized;
