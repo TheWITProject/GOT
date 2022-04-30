@@ -58,6 +58,7 @@ function CardGrid(props) {
                 sx={tempsx}
                 text={data.careerName}
                 image={data.imageName}
+                displayModal={props.displayModal}
               />
 
             </Grid>
@@ -77,6 +78,7 @@ function CardGrid(props) {
               sx={tempsx}
               text={data.careerName}
               image={data.imageName}
+              displayModal={props.displayModal}
             />
           </Grid>
         );
