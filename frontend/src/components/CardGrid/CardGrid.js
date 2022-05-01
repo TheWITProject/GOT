@@ -68,7 +68,7 @@ function CardGrid(props) {
   }
   return (
     <Grid container spacing={8}>
-      {careerInfo.map((data, key) => {
+      {career.map((data, key) => {
         //key is name and value is what the property is
         return (
           <Grid item key={key} xs={4}>
@@ -76,7 +76,7 @@ function CardGrid(props) {
               cardType={"careerMap"}
               sx={tempsx}
               text={data.careerName}
-              image={data.imageName}
+              image={data.imagePath}
             />
           </Grid>
         );

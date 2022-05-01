@@ -12,7 +12,7 @@ class Note(models.Model):
 
 class Careers(models.Model):
     careerName = models.TextField(null=True,blank=True)
-    imagePath = models.TextField(max_length = 200)
+    imagePath = models.URLField(max_length=200)
 
     def __str__(self):
         return self.careerName[0:50]
