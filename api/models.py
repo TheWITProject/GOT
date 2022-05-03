@@ -16,3 +16,7 @@ class Careers(models.Model):
 
     def __str__(self):
         return self.careerName[0:50]
+
+#create table that stores the bios -> primarykey
+#career type will be a foreign key
+#make user from django admin auth will be foreign key

@@ -22,7 +22,8 @@ function CardGrid(props) {
     console.log('Data:',data)
     setCareers(data)
   }
-
+  //axios package used to call data
+  
 
 
   const careerCardTypeSX = {
