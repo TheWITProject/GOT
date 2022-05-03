@@ -4,8 +4,8 @@ import {storyDetails} from "../data/profStoriesData.js";
 import ProfessionalStoryContent from "../components/ProfessionalStoryContent"
 
 const profStorySX ={
-  width: "fit-content(20em)",
-  height: "fit-content(20em)",
+  width: "80%",
+  height: "100%",
   backgroundColor: "white",
   border: 4,
   borderRadius:3,
@@ -13,11 +13,12 @@ const profStorySX ={
   marginLeft: 10,
   marginRight: 10,
   marginTop: 3,
-  marginBottom: 3
+  marginBottom: 3,
+  overflow: "hidden"
 }
 function ProfessionalStory() {
   return (
-    <div style={{overflow:"auto"}}>
+    <div>
       <ProfessionalStoryContent
         sx={profStorySX}
         details={storyDetails[0]}

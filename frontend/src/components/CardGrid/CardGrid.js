@@ -49,7 +49,7 @@ function CardGrid(props) {
       : undefined;
   if (props.cardType == "storiesCard") {
     return (
-      <Grid container spacing={8}>
+      <Grid container spacing={8} >
         {profInfo.map((data, key) => {
           //key is name and value is what the property is
           return (
@@ -59,6 +59,7 @@ function CardGrid(props) {
                 sx={tempsx}
                 text={data.careerName}
                 image={data.imageName}
+                displayModal={props.displayModal}
               />
 
             </Grid>
@@ -78,6 +79,7 @@ function CardGrid(props) {
               sx={tempsx}
               text={data.careerName}
               image={data.imagePath}
+              displayModal={props.displayModal}
             />
           </Grid>
         );
