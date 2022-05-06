@@ -37,7 +37,7 @@ class Card extends React.Component {
       return (
         <div>
           <Box sx={tempsx} onClick={() => {
-          this.props.displayModal(this.state.content)}}>
+          this.props.displayModal(this.props.content)}}>
             <img class="icon" height="200vmin" src={this.props.image} alt="icon" />
           </Box>
           <h3 class="boxLabel">{this.props.text}</h3>

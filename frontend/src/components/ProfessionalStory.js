@@ -16,12 +16,14 @@ const profStorySX ={
   marginBottom: 3,
   overflow: "hidden"
 }
-function ProfessionalStory() {
+function ProfessionalStory(props) {
+  // let tempData = props.data
+  // console.log(tempData)
   return (
     <div>
       <ProfessionalStoryContent
         sx={profStorySX}
-        details={storyDetails[0]}
+        data = {props.data}
       />
     </div>
   );

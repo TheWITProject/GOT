@@ -113,6 +113,7 @@ class TabCollection extends React.Component {
 
   displayModal = (providedContents) => {
     console.log("It Worked");
+    console.log(providedContents)
     this.setState({
       modalShouldDisplay: true,
       modalContents: providedContents,
@@ -157,7 +158,7 @@ class TabCollection extends React.Component {
         >
             <Box sx={modalstyle}>
               <div id="modal_outer">
-                <ProfessionalStory/>
+                <ProfessionalStory data={this.state.modalContents}/>
               </div>
             </Box>
             
