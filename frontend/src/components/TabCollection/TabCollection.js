@@ -140,7 +140,6 @@ class TabCollection extends React.Component {
           </TabPanel>
 
           <TabPanel scrollButtons="auto" value={1}>
-            <div dangerouslySetInnerHTML={{ __html: modal }} />
             <ProfessionalForm />
             <CardGrid
               cardType={"storiesCard"}

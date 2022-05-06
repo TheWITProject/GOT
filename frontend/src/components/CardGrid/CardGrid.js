@@ -80,6 +80,7 @@ function CardGrid(props) {
               text={data.careerName}
               image={data.imagePath}
               displayModal={props.displayModal}
+              careerId ={data.careerId}
             />
           </Grid>
         );
