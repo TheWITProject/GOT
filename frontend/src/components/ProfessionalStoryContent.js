@@ -5,12 +5,11 @@ import Box from '@mui/material/Box';
 
 function ProfPopupBox(props) {
   const defaultBoxSX ={
-    width: 750,
-    height:500,
+    width: "100%",
     marginLeft: 5,
     backgroundColor: 'yellow',
-    margin: '10px,12px,8px,15px',
-    padding: '8px',
+    margin: 'auto',
+    padding: '20px',
     
     
   }

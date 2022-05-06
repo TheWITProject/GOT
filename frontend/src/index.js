@@ -14,8 +14,7 @@ ReactDOM.render(
     <BrowserRouter>
       <Routes>
         <Route index element={<CareerMap />} />
-
-        <Route path="/careerinfo" element={<CareerInformation />} />
+        <Route path="/careerinfo" component={<CareerInformation />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
