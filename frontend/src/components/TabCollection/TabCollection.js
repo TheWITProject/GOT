@@ -9,6 +9,7 @@ import TabUnstyled, { tabUnstyledClasses } from '@mui/base/TabUnstyled';
 import CareerOverview from '../../main_pages/CareerOverview.js';
 import CardGrid from '../CardGrid/CardGrid.js';
 import ProfessionalForm from '../ProfessionalForm/ProfessionalForm.js';
+import DiscussionBox from '../DiscussionBox/DiscussionBox';
 
 const blue = {
   50: '#E0E2E5',
@@ -100,7 +101,9 @@ export default function UnstyledTabsCustomized() {
         <CardGrid cardType={"storiesCard"}/>
         </TabPanel>
 
-      <TabPanel value={2}>Third content</TabPanel>
+      <TabPanel value={2}>
+          <DiscussionBox/>
+      </TabPanel>
       
     </TabsUnstyled>
    
