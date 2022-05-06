@@ -4,15 +4,26 @@ from django.shortcuts import render
 from django.http import JsonResponse
 from rest_framework.response import Response 
 from rest_framework.decorators import api_view
-from .models import Note
-from .models import Careers
-from .serializers import CareersSerializer, NoteSerializer
+from .models import Note, Careers, ProfessionalStory
+from .serializers import CareersSerializer, NoteSerializer, ProfessionalSerializer
 # Create your views here.
 
 @api_view(['GET'])
 def getCareers(request):
     careers = Careers.objects.all()
     serializer = CareersSerializer(careers,many=True)
+    return Response(serializer.data)
+
+@api_view(['GET'])
+def getStories(request,pk):
+    stories = ProfessionalStory.objects.filter(careerID=pk)
+    serializer = ProfessionalSerializer(stories,many=True)
+    return Response(serializer.data)
+
+@api_view(['GET'])
+def getAllStories(request):
+    stories = ProfessionalStory.objects.all()
+    serializer = ProfessionalSerializer(stories,many=True)
     return Response(serializer.data)
 
 @api_view(['GET'])
