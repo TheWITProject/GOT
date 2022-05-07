@@ -7,5 +7,7 @@ urlpatterns = [
     path('notes/<str:pk>/',views.getNote, name="note"),
     path('careers/', views.getCareers, name="careers"),
     path('stories/',views.getAllStories, name="stories"),
-    path('stories/<str:pk>',views.getStories, name="get-stories")
+    path('stories/<str:pk>',views.getStories, name="get-stories"),
+    path('stories/create',views.postStories, name="create-stories")
+
 ]

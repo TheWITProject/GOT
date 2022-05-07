@@ -7,6 +7,7 @@ import Fab from "@mui/material/Fab";
 import FormComponent from "../FormComponent/FormComponent.js";
 import "./ProfessionalForm.css";
 import mailbox from "../../assets/graphics/mailbox.gif";
+import CSRFToken from '../CSRFToken';
 
 const styleBox = {
   position: "absolute",
@@ -55,6 +56,7 @@ export default function ProfessionalForm(props) {
       width: 400,
     },
   }));
+
 
   const [formInput, setFormInput] = useReducer(
     (state, newState) => ({ ...state, ...newState }),

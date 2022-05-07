@@ -6,7 +6,31 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from .models import Note, Careers, ProfessionalStory
 from .serializers import CareersSerializer, NoteSerializer, ProfessionalSerializer
+from django.views.decorators.csrf import ensure_csrf_cookie, csrf_protect,csrf_exempt
+from django.utils.decorators import method_decorator
+
+from api import serializers
 # Create your views here.
+#@method_decorator(csrf_exempt, name='dispatch')
+@api_view(['POST'])
+def postStories(request):   
+    data = request.data
+    story = ProfessionalStory.objects.create(
+    careerID = 'softwareengineer',
+    name = data['name'],
+    description = data['description'],
+    experience = data['experience'],
+    funfact = data['funfact'],
+    q1 = data['q1'],
+    q3 = data['q2'],
+    q2 = data['q3'],
+    q4 = data['q4'],
+    q5 = data['q5'],
+    q6 = data['q6'],
+    q7 = data['q7'],
+    q8 = data['q8'],    )
+    serializer=ProfessionalSerializer(story,many=False)
+    return Response(serializer.data)
 
 @api_view(['GET'])
 def getCareers(request):

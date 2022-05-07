@@ -5,7 +5,7 @@ from django.contrib import auth
 from rest_framework.response import Response
 from user_profile.models import UserProfile
 from .serializers import UserSerializer
-from django.views.decorators.csrf import ensure_csrf_cookie, csrf_protect
+from django.views.decorators.csrf import ensure_csrf_cookie, csrf_protect,csrf_exempt
 from django.utils.decorators import method_decorator
 
 class CheckAuthenticatedView(APIView):
@@ -22,7 +22,7 @@ class CheckAuthenticatedView(APIView):
         except:
             return Response({ 'error': 'Something went wrong when checking authentication status' }) 
 
-@method_decorator(csrf_protect, name='dispatch')
+@method_decorator(csrf_exempt, name='dispatch')
 class SignupView(APIView):
     permission_classes = (permissions.AllowAny, )
 
@@ -55,7 +55,8 @@ class SignupView(APIView):
             return Response({ 'error': 'Something went wrong when registering account' })
 
 
-@method_decorator(csrf_protect, name='dispatch')
+# @method_decorator(csrf_protect, name='dispatch')
+@method_decorator(csrf_exempt, name='dispatch')
 class LoginView(APIView):
     permission_classes = (permissions.AllowAny, )
 
