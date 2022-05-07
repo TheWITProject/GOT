@@ -41,6 +41,10 @@ INSTALLED_APPS = [
     'api.apps.ApiConfig',
     'rest_framework',
     'corsheaders',
+    'accounts',
+    'user_profile'
+    
+    
     
 
 ]
@@ -61,6 +65,7 @@ ROOT_URLCONF = 'backend.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        #Different:
         'DIRS': [os.path.join(BASE_DIR, 'frontend', 'build')],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -138,6 +143,21 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'frontend', 'build', 'static')]
 # CORS_ALLOWED_ORIGINS = [
 #     "http://127.0.0.1:8000",
 # ]
-CORS_ORIGIN_WHITELIST = [
-     'http://127.0.0.1:8000'
-]
+# CORS_ORIGIN_WHITELIST = [
+#      'http://127.0.0.1:8000'
+# ]
+
+#FROM LILY:
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ],
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.SessionAuthentication',
+    ]
+}
+
+CORS_ORIGIN_ALLOW_ALL = True
+CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1:8000/']
