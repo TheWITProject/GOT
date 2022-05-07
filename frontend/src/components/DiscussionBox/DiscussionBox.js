@@ -10,7 +10,7 @@ export default function BoxSx() {
       <div>
       <div>
       <SearchBar/>
-      <Button color="grey">Create Post</Button>
+      <Button >Create Post</Button>
       </div>
       <SelectBox  label = {"User Type"}
                   array ={["1","2","3"]}
