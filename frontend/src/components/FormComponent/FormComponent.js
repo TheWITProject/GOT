@@ -20,7 +20,7 @@ function FormComponent(props) {
       <h3>{props.title}</h3>
       <FormControl>
         <InputLabel sx= {styleInputLabel} htmlFor="my-input"><p>{props.placeholder}</p></InputLabel>
-        <Input disableUnderline= "true" sx= {styleInput} />
+        <Input onChange={props.onChange} defaultValue ={props.defaultValue} name={props.name} disableUnderline= "true" sx= {styleInput} />
       </FormControl>
     </div>
   );
