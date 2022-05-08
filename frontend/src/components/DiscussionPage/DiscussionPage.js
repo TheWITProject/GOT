@@ -3,16 +3,16 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import SearchBar from '../SearchBar/SearchBar';
 import SelectSmall from '../SelectBox/SelectBox';
-import DiscussionBoxChildForm from '../DiscussionBoxChildForm'
+import PostBox from '../PostBox'
 
 
-export default function BoxSx() {
+export default function DiscussionPage() {
     return (
       <div>
       <div>
       <div style={{ display: 'flex'}}>
       <SearchBar/>
-     <Button style={{width: '18%',
+      <Button style={{width: '18%',
                     borderRadius: "20px",
                     backgroundColor: '#FAE1DD',
                     alignItems: "center",
@@ -44,9 +44,9 @@ export default function BoxSx() {
                   array ={["SE","UI/UX","N/A"]}
                   />
       
-      <DiscussionBoxChildForm />
-      <DiscussionBoxChildForm />
-      <DiscussionBoxChildForm />    
+      <PostBox />
+      <PostBox />
+      <PostBox />  
 
             
                 

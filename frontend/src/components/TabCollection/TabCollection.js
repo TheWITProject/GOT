@@ -9,7 +9,7 @@ import TabUnstyled, { tabUnstyledClasses } from '@mui/base/TabUnstyled';
 import CareerOverview from '../../main_pages/CareerOverview.js';
 import CardGrid from '../CardGrid/CardGrid.js';
 import ProfessionalForm from '../ProfessionalForm/ProfessionalForm.js';
-import DiscussionBox from '../DiscussionBox/DiscussionBox';
+import DiscussionPage from '../DiscussionPage/DiscussionPage';
 
 const blue = {
   50: '#E0E2E5',
@@ -102,7 +102,7 @@ export default function UnstyledTabsCustomized() {
         </TabPanel>
 
       <TabPanel value={2}>
-          <DiscussionBox/>
+          <DiscussionPage/>
       </TabPanel>
       
     </TabsUnstyled>

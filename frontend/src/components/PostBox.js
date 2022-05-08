@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Box from '@mui/material/Box';
 
-export default class DiscussionBoxChildForm extends Component {
+export default class PostBox extends Component {
   render() {
     return (
       <Box
