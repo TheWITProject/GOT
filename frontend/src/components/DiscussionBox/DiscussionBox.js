@@ -2,71 +2,53 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import SearchBar from '../SearchBar/SearchBar';
-import SelectBox from '../SelectBox/SelectBox';
+import SelectSmall from '../SelectBox/SelectBox';
+import DiscussionBoxChildForm from '../DiscussionBoxChildForm'
 
 
 export default function BoxSx() {
     return (
       <div>
       <div>
+      <div style={{ display: 'flex'}}>
       <SearchBar/>
-      <Button >Create Post</Button>
+     <Button style={{width: '18%',
+                    borderRadius: "20px",
+                    backgroundColor: '#FAE1DD',
+                    alignItems: "center",
+                    color: "white",
+                    margin: "10px",
+                    fontSize: "20px"
+                  }}
+                    >
+                      Create Post</Button>
+     
+   
       </div>
-      <SelectBox  label = {"User Type"}
+      </div>
+      <SelectSmall  label = {"User Type"}
                   array ={["1","2","3"]}
                   
                   />
 
-      <SelectBox  label = {"Most Popular"}
+      <SelectSmall  label = {"Most Popular"}
                   array ={["Most Rated","N/A","N/A"]}
                   
                         />
       
-      <SelectBox label = {"Most Relevant"}
+      <SelectSmall label = {"Most Relevant"}
                   array ={["N/A","N/A","N/A"]}
                   />
       
-      <SelectBox label = {"Topic"}
+      <SelectSmall label = {"Topic"}
                   array ={["SE","UI/UX","N/A"]}
                   />
       
+      <DiscussionBoxChildForm />
+      <DiscussionBoxChildForm />
+      <DiscussionBoxChildForm />    
+
             
-      <Box
-            sx={{
-                p :5,
-                marginRight: "10px",
-                marginLeft: "10px",
-                width: "fix",
-                height: 300,
-                color: "red",
-                backgroundColor: 'yellow',
-                
-                
-            }} />
-            <Box
-                sx={{
-                    m: 5,
-                    p: 5,
-                    marginRight: "10px",
-                    marginLeft: "10px",
-                    width: "fix",
-                    height: 300,
-                    backgroundColor: 'primary.dark',
-                    
-                }} />
-                
-                <Box
-                sx={{
-                    m: 5,
-                    p: 5,
-                    marginRight: "10px",
-                    marginLeft: "10px",
-                    width: "fix",
-                    height: 300,
-                    color: "red",
-                    backgroundColor: 'yellow',
-                    
-                }} />
                 
                 </div>
     );
