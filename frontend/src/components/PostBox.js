@@ -13,7 +13,6 @@ export default class PostBox extends Component {
           marginLeft: "10px",
           width: "fix",
           height: 300,
-          color: "red",
           backgroundColor: '#d3d3d3',
           
           
