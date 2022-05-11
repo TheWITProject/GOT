@@ -3,8 +3,11 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import SelectBox from '../SelectBox/SelectBox.css';
 
 export default function SelectSmall(props) {
+
+
   let [boxName, setBoxName] = React.useState('');
 
   let handleChange = (event) => {
@@ -18,9 +21,11 @@ export default function SelectSmall(props) {
   return (
     <FormControl sx={{ m: 1, width: 150 }} size="small">
       <InputLabel id="demo-select-small">{label}</InputLabel>
+      <div className="selectWrapper">
       <Select
+        className="selectBox"
         labelId="demo-select-small"
-        id="demo-select-small"
+        id="demo-select-small"//same id twice??
         value={boxName}
         label="User Type"
         onChange={handleChange}
@@ -35,6 +40,7 @@ export default function SelectSmall(props) {
         <MenuItem value={20}>{array[4]}</MenuItem>
         <MenuItem value={30}>{array[5]}</MenuItem>
       </Select>
+      </div>
     </FormControl>
   );
 }
