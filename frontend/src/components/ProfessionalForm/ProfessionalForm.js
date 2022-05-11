@@ -1,3 +1,4 @@
+
 import React, { useReducer } from "react";
 import { Button, Icon, TextField, Paper, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
@@ -78,7 +79,7 @@ export default function ProfessionalForm(props) {
   const handleSubmit = (evt) => {
     evt.preventDefault();
 
-    let data = { formInput };
+    let data = {formInput};
     console.log(JSON.stringify(data));
     handleClose();
     fetch("/api/stories/create", {
