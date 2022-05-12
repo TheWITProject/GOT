@@ -33,7 +33,7 @@ export default function Signup() {
     <div>
       <Fab
         onClick={handleOpen}
-        sx={{ marginTop: 6, fontFamily: "Poppins" }}
+        sx={{ marginTop: 6, fontFamily: "Poppins",backgroundColor:"#E9EBED" }}
         variant="extended"
         size="medium"
         color="#F08063"
