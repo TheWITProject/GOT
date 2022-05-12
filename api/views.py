@@ -4,9 +4,8 @@ from django.shortcuts import render
 from django.http import JsonResponse
 from rest_framework.response import Response 
 from rest_framework.decorators import api_view
-from .models import Note
-from .models import Careers
-from .serializers import CareersSerializer, NoteSerializer
+from .models import *
+from .serializers import CareersSerializer, NoteSerializer,DiscussionSerializer
 # Create your views here.
 
 @api_view(['GET'])
@@ -40,7 +39,20 @@ def updateNote(request,pk):
         serializer.save()
     return Response(serializer.data)
 
+@api_view(['GET'])
+def getPost(request,pk):
+    notes = DiscussionPost.objects.get(id=pk) 
+    serializer = DiscussionSerializer(notes, many=False)
+    return Response(serializer.data)
 
+@api_view(['PUT']) #put is for updating items
+def updatePost(request,pk):
+    data = request.data
+    note = Note.objects.get(id=pk)
+    serializer = DiscussionSerializer(instance=note, data=data)
+    if serializer.is_valid():
+        serializer.save()
+    return Response(serializer.data)
 
 #HTTP methods:
 # @api_view(['GET'])
