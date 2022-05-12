@@ -14,6 +14,7 @@ ReactDOM.render(
     <BrowserRouter>
       <Routes>
         <Route index element={<CareerMap />} />
+        <Route path="/careermap/" element={<CareerMap />} />
 
         <Route path="/careerinfo/:id" element={<CareerInformation />} />
       </Routes>
