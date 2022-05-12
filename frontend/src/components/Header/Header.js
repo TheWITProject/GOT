@@ -20,10 +20,9 @@ function Header() {
       >
         <Link to={`/careermap/`} style={{ textDecoration: 'none' }}>
         <Fab
-          sx={{ marginTop: 6 ,fontFamily:"Poppins"}}
+          sx={{ marginTop: 6 ,fontFamily:"Poppins", backgroundColor:"#E9EBED"}}
           variant="extended"
           size="medium"
-          color="F08063"
           aria-label="add"
         >
           Career Map
