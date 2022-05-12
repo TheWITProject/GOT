@@ -11,13 +11,14 @@ import SearchIcon from "@mui/icons-material/Search";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
-  borderRadius: theme.shape.borderRadius,
+  borderRadius: "30px",
   backgroundColor: alpha(theme.palette.common.white, 0.95),
   "&:hover": {
     backgroundColor: alpha(theme.palette.common.white, 0.25)
   },
   marginLeft: 0,
   width: "100%",
+  marginBottom:15,
   [theme.breakpoints.up("sm")]: {
     marginLeft: theme.spacing(1),
     width: "fit"
@@ -37,11 +38,12 @@ const SearchIconWrapper = styled("div")(({ theme }) => ({
 const StyledInputBase = styled(InputBase)(({ theme }) => ({
   color: "#000000",
   width: "95%",
+  height:"30px",
   "& .MuiInputBase-input": {
     padding: theme.spacing(2, 2, 2, 0),
     //            placeholderTextColor="#000000" 
     // vertical padding + font size from searchIcon
-    paddingLeft: `calc(1em + ${theme.spacing(4)})`,
+    paddingLeft: "10px",
     transition: theme.transitions.create("width"),
     width: "100",
     [theme.breakpoints.up("sm")]: {
@@ -55,7 +57,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 export default function SearchAppBar() {
   return (
-    <AppBar position={"static"} sx={{width:"80%",borderRadius: "20px", margin: "10px", backgroundColor: "#FAE1DD"}}>
+    <AppBar position={"static"} sx={{height:"50px",width:"80%",borderRadius: "30px", margin: "10px", borderColor: "#FAE1DD",borderWidth:"2px", backgroundColor:"#0000"}}>
       <Toolbar>
         <Search>
           <StyledInputBase

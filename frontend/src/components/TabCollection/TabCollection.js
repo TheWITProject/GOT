@@ -9,7 +9,7 @@ import TabUnstyled, { tabUnstyledClasses } from '@mui/base/TabUnstyled';
 import CareerOverview from '../../main_pages/CareerOverview.js';
 import CardGrid from '../CardGrid/CardGrid.js';
 import ProfessionalForm from '../ProfessionalForm/ProfessionalForm.js';
-import DiscussionPage from '../DiscussionPage/DiscussionPage';
+import DiscussionPage from '../../main_pages/DiscussionPage';
 
 const blue = {
   50: '#E0E2E5',
