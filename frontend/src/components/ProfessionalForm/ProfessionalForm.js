@@ -84,7 +84,7 @@ export default function ProfessionalForm(props) {
     handleClose();
     fetch("/api/stories/create", {
       method: "POST",
-      body: JSON.stringify(data),
+      body: JSON.stringify(data["formInput"]),
       headers: {
         "Content-Type": "application/json"
       }
