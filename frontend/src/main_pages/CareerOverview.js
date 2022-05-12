@@ -2,7 +2,7 @@ import "./CareerOverview.css";
 import InfoBox from "../components/InfoBox/InfoBox.js";
 import "../components/Grid.css";
 import { careerDetails } from "../data/careerOverviewData.js";
-
+import {useLocation} from "react-router-dom";
 const careerOverviewSX ={
   width: "fit-content(20em)",
   height: "fit-content(20em)",
@@ -16,6 +16,8 @@ const careerOverviewSX ={
   marginBottom: 3
 }
 function CareerOverview() {
+  let location = useLocation();
+console.log(location);
   return (
     <div style={{overflow:"auto"}}>
       <InfoBox

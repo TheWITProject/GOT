@@ -25,7 +25,8 @@ class Card extends React.Component {
     if (this.props.cardType === "careerMap") {
       return (
         <div>
-          <Link to={`/careerinfo/${this.props.careerID}`}>
+          <Link to={{pathname:`/careerinfo/${this.props.careerID}`,state:this.props.careerID}}>
+          {/* <Link to={{`/careerinfo/${this.props.careerID}`}{ pathname: '/read'}}> */}
             <Box sx={tempsx}>
               <img class="icon" height="200vmin" src={this.props.image} alt="icon" />
             </Box>

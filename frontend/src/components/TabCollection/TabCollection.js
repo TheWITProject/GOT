@@ -10,6 +10,7 @@ import CardGrid from "../CardGrid/CardGrid.js";
 import ProfessionalForm from "../ProfessionalForm/ProfessionalForm.js";
 import Modal from "@mui/material/Modal";
 import ProfessionalStory from "../ProfessionalStory.js"
+
 import Box from "@mui/material/Box";
 
 const blue = {
