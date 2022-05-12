@@ -1,0 +1,13 @@
+.selectWrapper{
+    border-radius:30px;
+    display:inline-block;
+    overflow:hidden;
+    background:#cccccc;
+    border:0px solid #cccccc;
+  }
+  .selectBox{
+    width:140px;
+    height:40px;
+    border:none;
+    outline:none;
+  }

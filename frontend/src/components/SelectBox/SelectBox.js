@@ -3,6 +3,7 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import SelectBox from '../SelectBox/SelectBox.css';
 
 export default function SelectSmall(props) {
   let [boxName, setBoxName] = React.useState('');
@@ -18,7 +19,10 @@ export default function SelectSmall(props) {
   return (
     <FormControl sx={{ m: 1, width: 150 }} size="small">
       <InputLabel id="demo-select-small">{label}</InputLabel>
+      
       <Select
+        className="selectWrapper">
+        className="selectBox"
         labelId="demo-select-small"
         id="demo-select-small"
         value={boxName}
@@ -35,6 +39,7 @@ export default function SelectSmall(props) {
         <MenuItem value={20}>{array[4]}</MenuItem>
         <MenuItem value={30}>{array[5]}</MenuItem>
       </Select>
+      
     </FormControl>
   );
 }

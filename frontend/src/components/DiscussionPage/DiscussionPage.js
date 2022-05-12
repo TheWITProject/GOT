@@ -4,6 +4,7 @@ import Button from '@mui/material/Button';
 import SearchBar from '../SearchBar/SearchBar';
 import SelectSmall from '../SelectBox/SelectBox';
 import PostBox from '../PostBox'
+import Stack from '@mui/material/Stack';
 
 
 export default function DiscussionPage() {
@@ -44,7 +45,10 @@ export default function DiscussionPage() {
                   array ={["SE","UI/UX","N/A"]}
                   />
       
-      <PostBox />
+      <PostBox>
+          <button backgroundColor='#0063cc'>HI THERE</button>
+      </PostBox>
+          
       <PostBox />
       <PostBox />  
 
