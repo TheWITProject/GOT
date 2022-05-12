@@ -88,6 +88,7 @@ function CardGrid(props) {
             <Card
               cardType={"careerMap"}
               sx={tempsx}
+              careerID={data.careerID}
               text={data.careerName}
               image={data.imagePath}
               displayModal={props.displayModal}

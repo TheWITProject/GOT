@@ -20,7 +20,6 @@ class Careers(models.Model):
     def __str__(self):
         return self.careerID[0:50]
 
-
 class ProfessionalStory(models.Model):
     careerID = models.CharField(max_length=300)
     name = models.CharField(max_length=300)
