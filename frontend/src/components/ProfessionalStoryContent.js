@@ -35,19 +35,19 @@ function ProfPopupBox(props) {
         <p>{props.data.q2}</p>
         <h2>How did you decide to pursue your specific career?</h2>
         <p>{props.data.q3}</p>
-        <h2>How does your company culture align with your own goals and aspirations? </h2>
-        <p>{props.data.q4}</p>
+        {/* <h2>How does your company culture align with your own goals and aspirations? </h2>
+        <p>{props.data.q4}</p> */}
         <h2>Any advice on how to stand out and get hired for those starting off?</h2>
         <p>{props.data.q5}</p>
         <h2>What are some must-have resources or skills you would
             recommend for your industry?</h2>
         <p>{props.data.q6}</p>
-        <h2>What programs and tools do you use everyday for work? 
+        {/* <h2>What programs and tools do you use everyday for work? 
             What do you like/dislike about these programs?</h2>
         <p>{props.data.q7}</p>
         <h2>What was your big down time (failure) in jobs applying/interviews etc and 
             how did you go through that ?</h2>
-        <p>{props.data.q8}</p>
+        <p>{props.data.q8}</p> */}
 
       </Box>
     </div>

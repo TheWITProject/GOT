@@ -68,7 +68,7 @@ function CardGrid(props) {
                 cardType={"storiesCard"}
                 sx={tempsx}
                 text={data.name}
-                image={"https://raw.github.com/TheWITProject/GOT/main/frontend/src/assets/icons/dataAnalyst.png"}
+                image={data.imagePath}
                 displayModal={props.displayModal}
                 content={data}
               />
