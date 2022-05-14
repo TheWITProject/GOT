@@ -13,5 +13,7 @@ urlpatterns = [
     path('stories/<str:pk>',views.getStories, name="get-stories"),
 
     path('post/<str:pk>/',views.getPost, name="post"),
-    path('posts/', views.gePosts, name="posts")
+    path('posts/', views.getPosts, name="posts"),
+
+    path('careeroverview/',views.getOverview, name="overview"),
 ]

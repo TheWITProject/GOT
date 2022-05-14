@@ -8,4 +8,6 @@ admin.site.register(Note)
 admin.site.register(Careers)
 admin.site.register(ProfessionalStory)
 admin.site.register(DiscussionPost)
+admin.site.register(CareerOverview)
+
 

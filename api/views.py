@@ -5,7 +5,7 @@ from django.http import JsonResponse
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 
-from .serializers import CareersSerializer, NoteSerializer, ProfessionalSerializer, DiscussionSerializer
+from .serializers import *
 from django.utils.decorators import method_decorator
 from rest_framework.views import APIView
 from rest_framework import permissions
@@ -103,12 +103,21 @@ def getPost(request,pk):
     return Response(serializer.data)
 
 @api_view(['GET'])
-def gePosts(request):
+def getPosts(request):
     posts = DiscussionPost.objects.all() 
     #notes can not be passed directly to Response it needs to be serialized
     serializer = DiscussionSerializer(posts, many=True)
     #many -> do you want to serialize multiple objects or just one?
     return Response(serializer.data)
+
+@api_view(['GET'])
+def getOverview(request):
+    overview = CareerOverview.objects.all() 
+    #notes can not be passed directly to Response it needs to be serialized
+    serializer = CareerOverviewSerializer(overview, many=False)
+    #many -> do you want to serialize multiple objects or just one?
+    return Response(serializer.data)
+
 
 #HTTP methods:
 # @api_view(['GET'])
