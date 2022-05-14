@@ -6,19 +6,10 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view
 
 from .serializers import CareersSerializer, NoteSerializer, ProfessionalSerializer, DiscussionSerializer
-from django.views.decorators.csrf import ensure_csrf_cookie, csrf_protect
 from django.utils.decorators import method_decorator
 from rest_framework.views import APIView
 from rest_framework import permissions
 from .models import *
-
-# Create your views here.
-@method_decorator(ensure_csrf_cookie, name='dispatch')
-class GetCSRFToken(APIView):
-    permission_classes = (permissions.AllowAny, )
-
-    def get(self, request, format=None):
-        return Response({ 'success': 'CSRF cookie set' })
 
 
 
@@ -42,7 +33,7 @@ def getAllStories(request):
     serializer = ProfessionalSerializer(stories, many=True)
     return Response(serializer.data)
 
-#@method_decorator(csrf_protect, name='dispatch')
+
 @api_view(['POST'])
 def createStory(request):
     data = request.data
