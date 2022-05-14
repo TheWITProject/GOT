@@ -151,7 +151,9 @@ class TabCollection extends React.Component {
             />
           </TabPanel>
 
-          <TabPanel value={2}>Third content</TabPanel>
+          <TabPanel value={2}> 
+            <DiscussionPage/>
+          </TabPanel>
         </TabsUnstyled>
         <Modal
           open={this.state.modalShouldDisplay}
