@@ -10,8 +10,10 @@ import CardGrid from "../CardGrid/CardGrid.js";
 import ProfessionalForm from "../ProfessionalForm/ProfessionalForm.js";
 import Modal from "@mui/material/Modal";
 import ProfessionalStory from "../ProfessionalStory.js"
-
+import DiscussionPage from '../../main_pages/DiscussionPage';
 import Box from "@mui/material/Box";
+
+
 
 const blue = {
   50: "#E0E2E5",

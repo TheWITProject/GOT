@@ -42,3 +42,13 @@ class ProfessionalStory(models.Model):
 # create table that stores the bios -> primarykey
 # career type will be a foreign key
 # make user from django admin auth will be foreign key
+        return self.careerName[0:50]
+
+class DiscussionPost(models.Model):
+    title = models.TextField(null=True,blank=True)
+    author = models.TextField(max_length = 50)
+    date_created = models.DateTimeField(auto_now_add=True)
+    content = models.TextField(null=True,blank=True)
+    
+    def __str__(self):
+        return self.content[0:50]
