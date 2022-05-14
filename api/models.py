@@ -22,6 +22,7 @@ class Careers(models.Model):
 
 class ProfessionalStory(models.Model):
     careerID = models.CharField(max_length=300)
+    imagePath = models.URLField(default='https://raw.githubusercontent.com/TheWITProject/GOT/main/frontend/src/assets/icons/softwareEngineer.png')
     name = models.CharField(max_length=300)
     description = models.CharField(max_length=300)
     experience = models.CharField(max_length=300)
