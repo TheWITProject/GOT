@@ -79,7 +79,7 @@ export default function ProfessionalForm(props) {
   const handleSubmit = (evt) => {
     evt.preventDefault();
 
-    let data = {formInput};
+    let data = formInput;
     console.log(JSON.stringify(data));
     handleClose();
     fetch("/api/stories/create", {
