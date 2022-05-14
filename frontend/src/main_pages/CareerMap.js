@@ -26,7 +26,7 @@ function CareerMap() {
         <Parallax
           bgImage={landingPage}
           bgImageSize={{ height: "30px", maxWidth: "20px" }}
-          strength={50}
+          strength={0}
         >
           <div style={{ height: 900 }}>
             <Header />
@@ -37,9 +37,7 @@ function CareerMap() {
             <div id="intro">
               <h1>Career Map</h1>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium
-                interdum lacus orci mi potenti sapien malesuada accumsan sed.
-                Diam maecenas viverra dictumst orci pellentesque phasellus.
+              Career map has all the careers you can explore. With your passion, strengths and your personality, and what you are looking for. A career map helps you fit in with your dream career!
               </p>
             </div>
             <CardGrid cardType={"careerMap"}/>
