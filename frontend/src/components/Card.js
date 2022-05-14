@@ -13,8 +13,8 @@ class Card extends React.Component {
   }
   render() {
     const defaultCardTypeSX = {
-      width: 250,
-      height: 250,
+      width: 375,
+      height: 300,
       backgroundColor: "orange",
       "&:hover": {
         backgroundColor: "primary.main",
@@ -28,7 +28,7 @@ class Card extends React.Component {
           <Link to={{pathname:`/careerinfo/${this.props.careerID}`,state:{ from: this.props.careerID }}}>
           {/* <Link to={{`/careerinfo/${this.props.careerID}`}{ pathname: '/read'}}> */}
             <Box sx={tempsx}>
-              <img class="icon" height="200vmin" src={this.props.image} alt="icon" />
+              <img class="icon" height="200vmin" width="270vmin" src={this.props.image} alt="icon" />
             </Box>
           </Link>
           <h3 class="boxLabel">{this.props.text}</h3>
