@@ -19,9 +19,9 @@ class Careers(models.Model):
 
 class DiscussionPost(models.Model):
     title = models.TextField(null=True,blank=True)
-    author = models.TextField(max_length = 200)
+    author = models.TextField(max_length = 50)
     date_created = models.DateTimeField(auto_now_add=True)
     content = models.TextField(null=True,blank=True)
     
     def __str__(self):
-        return self.careerName[0:50]
+        return self.content[0:50]
