@@ -4,9 +4,8 @@ from django.shortcuts import render
 from django.http import JsonResponse
 from rest_framework.response import Response 
 from rest_framework.decorators import api_view
-from .models import Note
-from .models import Careers
-from .serializers import CareersSerializer, NoteSerializer
+from .models import *
+from .serializers import CareersSerializer, NoteSerializer,DiscussionSerializer
 # Create your views here.
 
 @api_view(['GET'])
@@ -41,6 +40,32 @@ def updateNote(request,pk):
     return Response(serializer.data)
 
 
+
+@api_view(['POST'])
+def createPost(request):
+    data = request.data
+    post = DiscussionPost.objects.create(
+        title=data['title'],
+        author=data['author'],
+        date_created=data['date_created'],
+        content=data['content'])
+        
+    serializer = DiscussionPost(post, many=False)
+    return Response(serializer.data)
+
+@api_view(['GET'])
+def getPost(request,pk):
+    post = DiscussionPost.objects.get(id=pk) 
+    serializer = DiscussionSerializer(post, many=False)
+    return Response(serializer.data)
+
+@api_view(['GET'])
+def gePosts(request):
+    posts = DiscussionPost.objects.all() 
+    #notes can not be passed directly to Response it needs to be serialized
+    serializer = DiscussionSerializer(posts, many=True)
+    #many -> do you want to serialize multiple objects or just one?
+    return Response(serializer.data)
 
 #HTTP methods:
 # @api_view(['GET'])
