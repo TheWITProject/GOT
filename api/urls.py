@@ -13,5 +13,10 @@ urlpatterns = [
     path('stories/<str:pk>',views.getStories, name="get-stories"),
 
     path('post/<str:pk>/',views.getPost, name="post"),
-    path('posts/', views.gePosts, name="posts")
+    path('posts/', views.getPosts, name="posts"),
+
+    path('careeroverviews/',views.getAllOverviews, name="career_overviews"),
+    path('careeroverviews/create',views.createOverview, name="create-career_overview"),
+    path('careeroverviews/<str:pk>',views.getOverview, name="get-overview"),
+    
 ]

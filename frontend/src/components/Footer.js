@@ -1,3 +1,5 @@
+import React from 'react';
+
 function Footer() {
     return (
       <div style={{display:"flex", margin:"20px", justifyContent: "space-evenly"}}>

@@ -1,3 +1,4 @@
+import React from 'react';
 import InfoBox from "../components/InfoBox/InfoBox.js";
 import "../components/Grid.css";
 import {storyDetails} from "../data/profStoriesData.js";
