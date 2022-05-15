@@ -39,6 +39,7 @@ def createStory(request):
     data = request.data
     story = ProfessionalStory.objects.create(
         careerID=data['careerID'],
+        imagePath = "https://raw.githubusercontent.com/TheWITProject/GOT/main/frontend/src/assets/icons/softwareEngineer.png",
         name=data['name'],
         experience=data['experience'],
         description=data['description'],
