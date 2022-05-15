@@ -123,13 +123,17 @@ class TabCollection extends React.Component {
     });
 
   };
+  closeModal = () =>{
+    this.setState({
+      modalShouldDisplay:false
+    })
+  };
 
   render() {
-    // var modal = `<div>NO MODAL</div>`;
 
-    // if (this.state.modalShouldDisplay) {
-    //   modal = this.state.modalContents;
-    // }
+    let location = useLocation()
+    let  id = location.state
+
     return (
       <div>
         <TabsUnstyled defaultValue={0}>

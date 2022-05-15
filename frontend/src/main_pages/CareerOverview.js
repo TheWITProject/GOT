@@ -16,8 +16,8 @@ const careerOverviewSX ={
   marginBottom: 3
 }
 function CareerOverview() {
-  let location = useLocation();
-console.log(location);
+
+
   return (
     <div style={{overflow:"auto"}}>
       <InfoBox
