@@ -1,3 +1,4 @@
+import React from 'react';
 import "./CareerInformation.css";
 import Header from "../components/Header/Header.js";
 import TabCollection from "../components/TabCollection/TabCollection.js";

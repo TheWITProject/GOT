@@ -1,3 +1,4 @@
+
 import Grid from "@mui/material/Grid";
 import Card from "../Card.js";
 import "@fontsource/poppins";
@@ -26,7 +27,7 @@ function CardGrid(props) {
     setCareers(data)
   }
   let getStories= async () =>{
-    let response = await fetch("/api/stories/")
+    let response = await fetch("/api/stories/softwareengineer") //CHANGED THIS
     let data = await response.json()
     console.log('Stories:',data)
     setStories(data)

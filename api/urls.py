@@ -15,5 +15,8 @@ urlpatterns = [
     path('post/<str:pk>/',views.getPost, name="post"),
     path('posts/', views.getPosts, name="posts"),
 
-    path('careeroverview/',views.getOverview, name="overview"),
+    path('careeroverviews/',views.getAllOverviews, name="career_overviews"),
+    path('careeroverviews/create',views.createOverview, name="create-career_overview"),
+    path('careeroverviews/<str:pk>',views.getOverview, name="get-overview"),
+    
 ]

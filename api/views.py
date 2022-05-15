@@ -110,14 +110,34 @@ def getPosts(request):
     #many -> do you want to serialize multiple objects or just one?
     return Response(serializer.data)
 
-@api_view(['GET'])
-def getOverview(request):
-    overview = CareerOverview.objects.all() 
-    #notes can not be passed directly to Response it needs to be serialized
-    serializer = CareerOverviewSerializer(overview, many=False)
-    #many -> do you want to serialize multiple objects or just one?
+@api_view(['POST'])
+def createOverview(request):
+    data = request.data
+    post = DiscussionPost.objects.create(
+        desc=data['description'],
+        tech_skill=data['tech skill'],
+        soft_skill=data['soft_skill'],
+        daily_duties=data['daily_duties'],
+        similar_jobs = data['similar_jobs'],
+        salary = data['salary'],
+        growth_rate = data['growth_rate'],
+        work_env = data['work_env'],
+        path = data['path'],  
+        )   
+    serializer = CareerOverview(post, many=False)
     return Response(serializer.data)
 
+@api_view(['GET'])
+def getAllOverviews(request):
+    stories = CareerOverview.objects.all()
+    serializer = CareerOverviewSerializer(stories, many=True)
+    return Response(serializer.data)
+
+@api_view(['GET'])
+def getOverview(request,pk):
+    overview= CareerOverview.objects.get(careerID=pk) 
+    serializer = CareerOverviewSerializer(overview, many=False)
+    return Response(serializer.data)
 
 #HTTP methods:
 # @api_view(['GET'])
