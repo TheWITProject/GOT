@@ -26,13 +26,13 @@ function ProfPopupBox(props) {
         <h2>Hello my name is...</h2>
         <p>Name: {props.data.name}</p>
         <p>{props.data.description}</p>
-        <p>Years of Experiences: {props.data.experience}</p>
+        <p>Years of Experience: {props.data.experience}</p>
         <p>{props.data.funfact}</p>
     </Box>
       <Box sx={temp_box_sx} p={1}>
-        <h2>Hi Lauren, tell us a little bit about yourself!</h2>
+        <h2>Tell us a little bit about yourself!</h2>
         <p>{props.data.q1}</p>
-        <h2>Can you tell us what you do as a Software Engineer at Meta for those who are unfamiliar?</h2>
+        <h2>Can you tell us what you do for those who are unfamiliar?</h2>
         <p>{props.data.q2}</p>
         <h2>How did you decide to pursue your specific career?</h2>
         <p>{props.data.q3}</p>

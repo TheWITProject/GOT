@@ -39,8 +39,8 @@ function CardGrid(props) {
 
   const careerCardTypeSX = {
 
-    width: 250,
-    height: 250,
+    width: 280,
+    height: 210,
     marginLeft: 10,
     backgroundColor: "white",
     "&:hover": {

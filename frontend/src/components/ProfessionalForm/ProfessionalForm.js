@@ -109,8 +109,9 @@ export default function ProfessionalForm(props) {
       <Fab
         onClick={handleOpen}
         sx={{
-          marginTop: 6,
-          marginBottom: 2,
+          marginTop: 2,
+          marginBottom: 4,
+          marginLeft: 150,
           fontFamily: "Poppins",
           backgroundColor: "#FAE1DD",
         }}
@@ -193,21 +194,21 @@ export default function ProfessionalForm(props) {
 
               />
               <FormComponent
-                title="What made you intered in and pursue X career?"
+                title="What made you interested in and pursue X career?"
                 placeholder=""
                 onChange={handleInput}
                 name="q3"
                 defaultValue={formInput.q3} 
 
               />
-              <FormComponent
+              {/* <FormComponent
                 title="How does your company culture align with your own goals and aspirations? "
                 placeholder=""
                 onChange={handleInput}
                 name="q4"
                 defaultValue={formInput.q4} 
 
-              />
+              /> */}
               <FormComponent
                 title="Any advice on how to stand out and get hired for those starting off"
                 placeholder=""
@@ -224,7 +225,7 @@ export default function ProfessionalForm(props) {
                 defaultValue={formInput.q6} 
 
               />
-              <FormComponent
+              {/* <FormComponent
                 title="What was your big down time ( failure) in jobs applying/interviews etc and how did you go through that?"
                 placeholder=""
                 onChange={handleInput}
@@ -239,16 +240,13 @@ export default function ProfessionalForm(props) {
                 name="q8"
                 defaultValue={formInput.q8} 
 
-              />
+              /> */}
               <Button
                 type="submit"
-                variant="contained"
-                color="primary"
-                className={classes.button}
-                
-      
+                variant="text"
+                color="#F8DCD0"
               >
-                Subscribe <Icon className={classes.rightIcon}>send</Icon>
+                Subscribe 
               </Button>
             </div>
           </form>
