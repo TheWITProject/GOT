@@ -25,7 +25,7 @@ function CareerMap() {
       <div style={styles}>
         <Parallax
           bgImage={landingPage}
-          bgImageSize={{ height: "30px", maxWidth: "20px" }}
+           bgImageSize={{ height: "5px" }}
           strength={0}
         >
           <div style={{ height: 900 }}>
