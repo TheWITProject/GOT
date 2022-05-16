@@ -26,7 +26,7 @@ function CardGrid(props) {
     setCareers(data)
   }
   let getStories= async () =>{
-    let response = await fetch("/api/stories/")
+    let response = await fetch(`/api/stories/${props.pageID}`)
     let data = await response.json()
     console.log('Stories:',data)
     setStories(data)

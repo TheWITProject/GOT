@@ -2,7 +2,7 @@ import InfoBox from "../components/InfoBox/InfoBox.js";
 import "../components/Grid.css";
 import {storyDetails} from "../data/profStoriesData.js";
 import ProfessionalStoryContent from "../components/ProfessionalStoryContent"
-import {useLocation} from "react-router-dom";
+
 const profStorySX ={
   width: "80%",
   height: "100%",
@@ -17,7 +17,7 @@ const profStorySX ={
   overflow: "hidden"
 }
 function ProfessionalStory(props) {
-  let location = useLocation();
+
   return (
     <div>
       <ProfessionalStoryContent
