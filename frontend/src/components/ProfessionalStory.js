@@ -18,13 +18,14 @@ const profStorySX ={
   overflow: "hidden"
 }
 function ProfessionalStory(props) {
-  // let tempData = props.data
-  // console.log(tempData)
+
   return (
     <div>
       <ProfessionalStoryContent
         sx={profStorySX}
         data = {props.data}
+
+
       />
     </div>
   );

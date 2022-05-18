@@ -27,7 +27,7 @@ function CardGrid(props) {
     setCareers(data)
   }
   let getStories= async () =>{
-    let response = await fetch("/api/stories/softwareengineer") //CHANGED THIS
+    let response = await fetch(`/api/stories/${props.pageID}`)
     let data = await response.json()
     console.log('Stories:',data)
     setStories(data)
@@ -69,7 +69,7 @@ function CardGrid(props) {
                 cardType={"storiesCard"}
                 sx={tempsx}
                 text={data.name}
-                image={"https://raw.github.com/TheWITProject/GOT/main/frontend/src/assets/icons/dataAnalyst.png"}
+                image={data.imagePath}
                 displayModal={props.displayModal}
                 content={data}
               />

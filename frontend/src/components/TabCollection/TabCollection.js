@@ -15,6 +15,7 @@ import Box from "@mui/material/Box";
 
 
 
+
 const blue = {
   50: "#E0E2E5",
   100: "#FAE1DD",
@@ -96,6 +97,7 @@ const TabsList = styled(TabsListUnstyled)`
   font-family: Poppins;
 `;
 
+
 class TabCollection extends React.Component {
   constructor(props) {
     super(props);
@@ -107,12 +109,8 @@ class TabCollection extends React.Component {
     };
     this.state = state;
   }
-  
-  closeModal = () =>{
-    this.setState({
-      modalShouldDisplay:false
-    })
-  };
+
+
 
   displayModal = (providedContents) => {
     console.log("It Worked");
@@ -123,13 +121,14 @@ class TabCollection extends React.Component {
     });
 
   };
+  closeModal = () =>{
+    this.setState({
+      modalShouldDisplay:false
+    })
+  };
 
   render() {
-    // var modal = `<div>NO MODAL</div>`;
 
-    // if (this.state.modalShouldDisplay) {
-    //   modal = this.state.modalContents;
-    // }
     return (
       <div>
         <TabsUnstyled defaultValue={0}>
@@ -140,7 +139,7 @@ class TabCollection extends React.Component {
           </TabsList>
 
           <TabPanel scrollButtons="auto" value={0}>
-            <CareerOverview />
+            <CareerOverview pageID={this.props.pageID}/>
           </TabPanel>
 
           <TabPanel scrollButtons="auto" value={1}>
@@ -148,11 +147,12 @@ class TabCollection extends React.Component {
             <CardGrid
               cardType={"storiesCard"}
               displayModal={this.state.displayModal}
+              pageID={this.props.pageID}
             />
           </TabPanel>
 
           <TabPanel value={2}> 
-            <DiscussionPage/>
+            <DiscussionPage pageID={this.props.pageID}/>
           </TabPanel>
         </TabsUnstyled>
         <Modal
