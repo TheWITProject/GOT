@@ -1,16 +1,22 @@
 import * as React from "react";
+
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import SearchBar from "../components/SearchBar/SearchBar";
 import SelectSmall from "../components/SelectBox/SelectBox";
 import DiscussionPost from "../components/DiscussionPost/DiscussionPostComponent.js";
+import "./DiscussionPage.css";
 
 export default function DiscussionPage() {
   return (
     <div style={{marginLeft:"70px",marginRight:"80px"}}>
-      <div>
+  
         <div style={{ display: "flex" }}>
-          <SearchBar />
+          <SearchBar 
+            containerStyle={{backgroundColor: 'green'}}
+            inputStyle={{backgroundColor: 'red'}}
+     
+          />
           <Button
             style={{
               width: "18%",
@@ -27,7 +33,7 @@ export default function DiscussionPage() {
             Create Post
           </Button>
         </div>
-      </div>
+    
       <SelectSmall label={"User Type"} array={["1", "2", "3"]} />
 
       <SelectSmall

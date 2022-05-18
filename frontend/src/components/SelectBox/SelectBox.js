@@ -19,18 +19,17 @@ export default function SelectSmall(props) {
 
 
   return (
-    <FormControl sx={{ m: 1, width: 150 }} size="small">
-      <InputLabel id="demo-select-small">{label}</InputLabel>
-      <div className="selectWrapper">
+    <FormControl sx={{m:1, width: 150}} size="small" >
+      <InputLabel >{label}</InputLabel>
+      <div className="selectWrapper" >
       <Select
         className="selectBox"
         labelId="demo-select-small"
-        id="demo-select-small"//same id twice??
         value={boxName}
         label="User Type"
         onChange={handleChange}
       >
-        <MenuItem value="" width ={10}>
+        <MenuItem className= "border" value="" width ={10} height={20}>
           <em>None</em>
         </MenuItem>
         <MenuItem value={10}>{array[0]}</MenuItem>

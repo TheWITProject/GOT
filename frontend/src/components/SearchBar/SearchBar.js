@@ -12,10 +12,8 @@ import SearchIcon from "@mui/icons-material/Search";
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
   borderRadius: "30px",
-  backgroundColor: alpha(theme.palette.common.white, 0.95),
-  "&:hover": {
-    backgroundColor: alpha(theme.palette.common.white, 0.25)
-  },
+  backgroundColor: "white",
+  
   marginLeft: 0,
   width: "100%",
   marginBottom:15,
@@ -36,7 +34,7 @@ const SearchIconWrapper = styled("div")(({ theme }) => ({
 }));
 
 const StyledInputBase = styled(InputBase)(({ theme }) => ({
-  color: "#000000",
+  color: "#fae1dd",
   width: "95%",
   height:"30px",
   "& .MuiInputBase-input": {
@@ -57,11 +55,13 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 export default function SearchAppBar() {
   return (
-    <AppBar position={"static"} sx={{height:"50px",width:"80%",borderRadius: "30px", margin: "10px", borderColor: "#FAE1DD",borderWidth:"2px", backgroundColor:"#0000"}}>
+    <AppBar position={"static"} sx={{height:"50px",width:"80%",borderRadius: "30px", margin: "10px", borderColor: "#FAE1DD",borderWidth:"2px", backgroundColor:"#fae1dd"}}>
       <Toolbar>
         <Search>
           <StyledInputBase
+            
             placeholder="Search for a post"
+            placeholderTextColor={{"color":"black"}}
             inputProps={{ "aria-label": "search" }}
           />
           <SearchIconWrapper />
