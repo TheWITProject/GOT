@@ -18,28 +18,26 @@ const careerOverviewSX = {
   marginTop: 3,
   marginBottom: 3,
 };
-function CareerOverview() {
+function CareerOverview(props) {
   let [overview, setOverview] = useState([]);
   useEffect(() => {
     getOverview();
   }, []);
 
   let getOverview = async () => {
-    let response = await fetch("/api/careeroverviews/softwareengineer"); //CHANGED THIS
+    let response = await fetch(`/api/careeroverviews/${props.pageID}`); //CHANGED THIS
     let data = await response.json();
     console.log("Overview:", data);
     setOverview(data);
   };
   
-  let location = useLocation();
-  console.log(location);
+  // let location = useLocation();
+  // console.log(location);
 
-    return (
-      <div style={{ overflow: "auto" }}>
-        <InfoBox sx={careerOverviewSX} details={overview} isStats={false} />
-        <InfoBox sx={careerOverviewSX} details={overview} isStats={true} />
-      </div>
-    );
+    return (<div style={{ overflow: "auto" }}>
+                  <InfoBox sx={careerOverviewSX} details={overview} isStats={false} />
+                  <InfoBox sx={careerOverviewSX} details={overview} isStats={true} />
+              </div>);
   
 }
 
