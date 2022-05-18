@@ -29,7 +29,7 @@ export default function SelectSmall(props) {
         label="User Type"
         onChange={handleChange}
       >
-        <MenuItem className= "border" value="" width ={10} height={20}>
+        <MenuItem value="" width ={10} height={20}>
           <em>None</em>
         </MenuItem>
         <MenuItem value={10}>{array[0]}</MenuItem>

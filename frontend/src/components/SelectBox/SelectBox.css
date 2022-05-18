@@ -6,6 +6,7 @@
   width:140px;
   height:40px;
   border-style: solid;
+ 
 
 }
 .selectBox{
@@ -15,6 +16,3 @@
   outline:none;
 }
 
-.color{
-color: aquamarine;
-}
