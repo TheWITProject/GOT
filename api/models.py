@@ -64,7 +64,7 @@ class DiscussionPost(models.Model):
         return self.content[0:50]
 
 class CareerOverview(models.Model):
-    careerID= models.CharField(null=True,max_length=300)
+    careerID= models.CharField(max_length=300)
     desc = models.TextField(null=True,blank=True)
     tech_skill= models.TextField(null=True,blank=True)
     soft_skill = models.TextField(null=True,blank=True)
@@ -74,8 +74,9 @@ class CareerOverview(models.Model):
     growth_rate= models.TextField(null=True,blank=True)
     work_env = models.TextField(null=True,blank=True)
     path = models.TextField(null=True,blank=True)
-    
+
+
     def __str__(self):
-        return self.desc[0:50]
+        return self.careerID[0:50]
 
        

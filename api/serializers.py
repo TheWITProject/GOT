@@ -1,7 +1,6 @@
 from rest_framework.serializers import ModelSerializer
-from .models import Note
-from .models import Careers
 from .models import *
+
 
 #import this in views
 class NoteSerializer(ModelSerializer):
