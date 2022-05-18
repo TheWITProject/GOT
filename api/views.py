@@ -5,7 +5,7 @@ from django.http import JsonResponse
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 
-from .serializers import CareersSerializer, NoteSerializer, ProfessionalSerializer, DiscussionSerializer
+from .serializers import *
 from django.utils.decorators import method_decorator
 from rest_framework.views import APIView
 from rest_framework import permissions
@@ -104,11 +104,40 @@ def getPost(request,pk):
     return Response(serializer.data)
 
 @api_view(['GET'])
-def gePosts(request):
+def getPosts(request):
     posts = DiscussionPost.objects.all() 
     #notes can not be passed directly to Response it needs to be serialized
     serializer = DiscussionSerializer(posts, many=True)
     #many -> do you want to serialize multiple objects or just one?
+    return Response(serializer.data)
+
+@api_view(['POST'])
+def createOverview(request):
+    data = request.data
+    post = DiscussionPost.objects.create(
+        desc=data['description'],
+        tech_skill=data['tech skill'],
+        soft_skill=data['soft_skill'],
+        daily_duties=data['daily_duties'],
+        similar_jobs = data['similar_jobs'],
+        salary = data['salary'],
+        growth_rate = data['growth_rate'],
+        work_env = data['work_env'],
+        path = data['path'],  
+        )   
+    serializer = CareerOverview(post, many=False)
+    return Response(serializer.data)
+
+@api_view(['GET'])
+def getAllOverviews(request):
+    stories = CareerOverview.objects.all()
+    serializer = CareerOverviewSerializer(stories, many=True)
+    return Response(serializer.data)
+
+@api_view(['GET'])
+def getOverview(request,pk):
+    overview= CareerOverview.objects.get(careerID=pk) 
+    serializer = CareerOverviewSerializer(overview, many=False)
     return Response(serializer.data)
 
 #HTTP methods:

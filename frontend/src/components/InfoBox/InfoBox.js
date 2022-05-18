@@ -21,8 +21,10 @@ function InfoBox(props) {
       <div>
         <Box sx={temp_box_sx} p={1}>
           <h2>Statistics Go Here:</h2>
-          <p>{props.details.statistic1}</p>
-          <p>{props.details.statistic2}</p>
+          <p>{props.details.salary}</p>
+          <p>{props.details.growth_rate}</p>
+          <p>{props.details.work_env}</p>
+          <p>{props.details.path}</p>
         </Box>
       </div>
     );
@@ -31,15 +33,15 @@ function InfoBox(props) {
     <div>
       <Box sx={temp_box_sx} p={1}>
         <h2>Description:</h2>
-        <p>{props.details.description}</p>
+        <p>{props.details.desc}</p>
         <h2>Technical Skills:</h2>
-        <p>{props.details.technicalSkills}</p>
+        <p>{props.details.tech_skill}</p>
         <h2>Soft Skills:</h2>
-        <p>{props.details.softSkills}</p>
+        <p>{props.details.soft_skill}</p>
         <h2>Daily Duties:</h2>
-        <p>{props.details.dailyDuties}</p>
+        <p>{props.details.daily_duties}</p>
         <h2>Similar Career Jobs:</h2>
-        <p>{props.details.similarJobs}</p>
+        <p>{props.details.similar_jobs}</p>
       </Box>
     </div>
   );

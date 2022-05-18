@@ -20,7 +20,13 @@ class ProfessionalSerializer(ModelSerializer):
     class Meta:
         model = ProfessionalStory
         fields = '__all__'
+
 class DiscussionSerializer(ModelSerializer):
     class Meta:
         model = DiscussionPost
+        fields = '__all__'
+
+class CareerOverviewSerializer(ModelSerializer):
+    class Meta:
+        model = CareerOverview
         fields = '__all__'
