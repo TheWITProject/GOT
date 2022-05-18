@@ -5,8 +5,12 @@ import TabCollection from "../components/TabCollection/TabCollection.js";
 import InteractiveBackground from "../components/InteractiveBackground.js";
 import { Parallax} from "react-parallax";
 import "@fontsource/poppins";
+import {useLocation} from "react-router-dom";
 
 function CareerInformation() {
+  let location = useLocation()
+  let pageID = location.state.id
+  console.log(pageID)
   return (
     <div>
       <InteractiveBackground />
@@ -17,7 +21,7 @@ function CareerInformation() {
           </div>
        
           <div style={{ float:"bottom", overflow: "auto"}}>
-            <TabCollection/>
+            <TabCollection pageID={pageID}/>
           </div>
       </div>
     </div>

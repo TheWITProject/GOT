@@ -7,7 +7,9 @@ import SelectSmall from "../components/SelectBox/SelectBox";
 import DiscussionPost from "../components/DiscussionPost/DiscussionPostComponent.js";
 import "./DiscussionPage.css";
 
+import {useLocation} from "react-router-dom";
 export default function DiscussionPage() {
+
   return (
     <div style={{marginLeft:"70px",marginRight:"80px"}}>
   
@@ -45,7 +47,7 @@ export default function DiscussionPage() {
 
       <SelectSmall label={"Topic"} array={["SE", "UI/UX", "N/A"]} />
 
-      <DiscussionPost />
+      <DiscussionPost/>
     </div>
   );
 }
