@@ -21,7 +21,7 @@ class Card extends React.Component {
         opacity: [0.9, 0.8, 0.7],
       },
     };
-    let tempsx = this.props.sx ? this.props.sx : defaultCardTypeSX; //? is if else
+    let tempsx = this.props.sx; //? is if else
     if (this.props.cardType === "careerMap") {
       return (
         <div>
@@ -39,7 +39,7 @@ class Card extends React.Component {
         <div>
           <Box sx={tempsx} onClick={() => {
           this.props.displayModal(this.props.content)}}>
-            <img class="icon" height="200vmin" src={this.props.image} alt="icon" />
+            <img id="story" height="200vmin" width="200vmin" src={this.props.image} alt="icon" />
           </Box>
           <h3 class="boxLabel">{this.props.text}</h3>
         </div>

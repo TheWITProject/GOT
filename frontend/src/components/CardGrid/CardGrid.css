@@ -11,4 +11,12 @@ p,h1,h2,h3{
     margin-left: 5px;
     margin-top: 5px;
     justify-content: center;
+}
+
+#story{
+    display: block;
+    margin-left: 30px;
+    margin-top: 10px;
+    justify-content: center;
   }
+
