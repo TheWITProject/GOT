@@ -53,11 +53,27 @@ function CardGrid(props) {
     borderColor: '#E9EBED',
   }
  
+  const storiesCardTypeSX = {
+
+    width: 200,
+    height: 210,
+    marginLeft: 10,
+    backgroundColor: "white",
+    "&:hover": {
+      backgroundColor: "#F2DAD5",
+      opacity: [0.9, 0.8, 0.7],
+    },
+    border: 8,
+    borderRadius: 3,
+
+    borderColor: '#E9EBED',
+  }
 
   let tempsx =
-    props.cardType === "careerMap" || props.cardType === "storiesCard"
+    props.cardType === "careerMap" 
       ? careerCardTypeSX
-      : undefined;
+      : storiesCardTypeSX;
+  
   if (props.cardType == "storiesCard") {
     return (
       <Grid container spacing={8} >
@@ -67,7 +83,7 @@ function CardGrid(props) {
             <Grid item key={key} xs={4}>
               <Card
                 cardType={"storiesCard"}
-                sx={tempsx}
+                sx={storiesCardTypeSX}
                 text={data.name}
                 image={data.imagePath}
                 displayModal={props.displayModal}
@@ -88,7 +104,7 @@ function CardGrid(props) {
           <Grid item key={key} xs={4}>
             <Card
               cardType={"careerMap"}
-              sx={tempsx}
+              sx={careerCardTypeSX}
               careerID={data.careerID}
               text={data.careerName}
               image={data.imagePath}

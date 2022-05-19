@@ -246,7 +246,7 @@ export default function ProfessionalForm(props) {
                 variant="text"
                 color="#F8DCD0"
               >
-                Subscribe 
+                Submit 
               </Button>
             </div>
           </form>
