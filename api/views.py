@@ -94,7 +94,7 @@ def createPost(request):
         date_created=data['date_created'],
         content=data['content'])
         
-    serializer = DiscussionPost(post, many=False)
+    serializer = DiscussionSerializer(post, many=False)
     return Response(serializer.data)
 
 @api_view(['GET'])
