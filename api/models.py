@@ -54,14 +54,6 @@ class DiscussionPost(models.Model):
     def __str__(self):
         return self.content[0:50]
 
-class DiscussionPost(models.Model):
-    title = models.TextField(null=True,blank=True)
-    author = models.TextField(max_length = 50)
-    date_created = models.DateTimeField(auto_now_add=True)
-    content = models.TextField(null=True,blank=True)
-    
-    def __str__(self):
-        return self.content[0:50]
 
 class CareerOverview(models.Model):
     careerID= models.CharField(max_length=300)

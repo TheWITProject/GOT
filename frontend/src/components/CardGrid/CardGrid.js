@@ -55,7 +55,7 @@ function CardGrid(props) {
  
   const storiesCardTypeSX = {
 
-    width: 200,
+    width: 230,
     height: 210,
     marginLeft: 10,
     backgroundColor: "white",

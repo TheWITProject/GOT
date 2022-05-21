@@ -12,6 +12,7 @@ import Modal from "@mui/material/Modal";
 import ProfessionalStory from "../ProfessionalStory.js"
 import DiscussionPage from '../../main_pages/DiscussionPage';
 import Box from "@mui/material/Box";
+import "./TabCollection.css"
 
 
 
@@ -131,7 +132,12 @@ class TabCollection extends React.Component {
 
     return (
       <div>
+        <div id ="title">
+        <h1>{this.props.pageTitle}</h1>
+        </div>
+       
         <TabsUnstyled defaultValue={0}>
+
           <TabsList>
             <Tab>Career Overview</Tab>
             <Tab>Professional Stories</Tab>

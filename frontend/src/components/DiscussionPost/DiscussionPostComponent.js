@@ -3,7 +3,12 @@ import Box from '@mui/material/Box';
 import "../DiscussionPost/DiscussionPostComponent.css"; 
 
 export default class DiscussionPost extends Component {
+  constructor(props){
+    super(props)
+  }
+
   render() {
+    console.log(this.props.author)
     return (
       <div style={{display:"flex", flexDirection:"column"}}>
       <Box
@@ -20,22 +25,19 @@ export default class DiscussionPost extends Component {
           
       }}>
         <h2 id="postTitle">
-              Discussion Title Goes Here
+              {this.props.title}
         </h2>
         <div style={{display:"flex",flexDirection:"row",justifyContent: "space-between",margin:"0px"}}>
         <h3 id="postAuthor">
-          Author Name Goes Here
+          {this.props.author}
         </h3>
         <h3 id="postDate">
-          Date Goes Here
+          May 15, 2022
         </h3>
         </div>
       
         <p id="postContent">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        {this.props.content}
         </p>
       </Box>
       </div>

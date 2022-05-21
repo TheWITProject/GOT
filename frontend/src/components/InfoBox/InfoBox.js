@@ -20,10 +20,13 @@ function InfoBox(props) {
     return (
       <div>
         <Box sx={temp_box_sx} p={1}>
-          <h2>Statistics Go Here:</h2>
+          <h2>Salary:</h2>
           <p>{props.details.salary}</p>
+          <h2>Growth Rate:</h2>
           <p>{props.details.growth_rate}</p>
+          <h2>Work Environment:</h2>
           <p>{props.details.work_env}</p>
+          <h2>Career Pathway:</h2>
           <p>{props.details.path}</p>
         </Box>
       </div>
