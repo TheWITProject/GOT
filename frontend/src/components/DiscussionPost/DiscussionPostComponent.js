@@ -32,7 +32,7 @@ export default class DiscussionPost extends Component {
           {this.props.author}
         </h3>
         <h3 id="postDate">
-          {this.props.date}
+          May 15, 2022
         </h3>
         </div>
       

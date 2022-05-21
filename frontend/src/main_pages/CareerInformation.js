@@ -10,6 +10,7 @@ import {useLocation} from "react-router-dom";
 function CareerInformation() {
   let location = useLocation()
   let pageID = location.state.id
+  let pageTitle = location.state.title
   console.log(pageID)
   return (
     <div>
@@ -21,7 +22,7 @@ function CareerInformation() {
           </div>
        
           <div style={{ float:"bottom", overflow: "auto"}}>
-            <TabCollection pageID={pageID}/>
+            <TabCollection pageID={pageID} pageTitle={pageTitle}/>
           </div>
       </div>
     </div>

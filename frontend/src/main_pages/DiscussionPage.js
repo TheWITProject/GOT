@@ -54,6 +54,7 @@ export default function DiscussionPage() {
       <SelectSmall label={"Most Relevant"} array={["N/A", "N/A", "N/A"]} />
 
       <SelectSmall label={"Topic"} array={["SE", "UI/UX", "N/A"]} />
+      
       {post.map((data, key) => {
         return( <DiscussionPost title={data.title} author={data.author} content={data.content} date={data.date_created} />);
       })}
