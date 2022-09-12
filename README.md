@@ -21,9 +21,9 @@ In addition, we believe in highlighting all Tech Careers: Many of our users only
 # How to run this application:
 
 ## Prerequisites:
--Install Node.js
--Install Python3
--Install Pip
+- Install Node.js
+- Install Python3
+- Install Pip
 
 ## To Run Frontend:
 - cd into frontend folder
